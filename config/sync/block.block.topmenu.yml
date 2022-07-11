@@ -1,0 +1,25 @@
+uuid: 73fceea0-2d5f-4e92-a72c-b409ab21e629
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-menu
+  module:
+    - system
+  theme:
+    - olivero
+id: topmenu
+theme: olivero
+region: header
+weight: -6
+provider: null
+plugin: 'system_menu_block:top-menu'
+settings:
+  id: 'system_menu_block:top-menu'
+  label: 'top menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

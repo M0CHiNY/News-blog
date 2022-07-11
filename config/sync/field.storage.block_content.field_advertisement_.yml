@@ -1,0 +1,20 @@
+uuid: 2840a817-9093-472b-a080-e033d4c5e8fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - media
+id: block_content.field_advertisement_
+field_name: field_advertisement_
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

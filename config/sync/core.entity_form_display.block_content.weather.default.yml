@@ -1,0 +1,30 @@
+uuid: c6601a3f-d1a2-4545-a795-a4a51c8c54fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.weather
+    - field.field.block_content.weather.field_weather
+  module:
+    - media_library
+id: block_content.weather.default
+targetEntityType: block_content
+bundle: weather
+mode: default
+content:
+  field_weather:
+    type: media_library_widget
+    weight: 26
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

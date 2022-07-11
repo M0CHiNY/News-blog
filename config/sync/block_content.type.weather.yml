@@ -1,0 +1,8 @@
+uuid: 760733f1-697e-40d8-8e26-1951b422d53c
+langcode: en
+status: true
+dependencies: {  }
+id: weather
+label: Weather
+revision: 0
+description: ''

@@ -1,0 +1,24 @@
+uuid: 9014b2a0-c355-4904-bc1c-35cdb357cd1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.data
+    - field.field.block_content.data.field_date
+  module:
+    - datetime
+id: block_content.data.default
+targetEntityType: block_content
+bundle: data
+mode: default
+content:
+  field_date:
+    type: datetime_custom
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'l,M d, Y'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

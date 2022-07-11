@@ -1,0 +1,29 @@
+uuid: 45ca3efd-8632-4ac2-8dc4-8ff563069f0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.article
+  module:
+    - text
+_core:
+  default_config_hash: IjZnOLWk1Pjq3WRg2pLSA1ERh7Po7izCq_p6UztZr2c
+id: node.article.body
+field_name: body
+entity_type: node
+bundle: article
+label: Body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: "<p>People live better in big houses and in big clothes. I try to contrast; life today is full of contrast. We have to change! I am not interested in the past, except as the road to the future. Give me time and I’ll give you a revolution. I think the idea of mixing luxury and mass-market fashion is very modern. I want people to be afraid of the women I dress.</p>\r\n\r\n<h2>Mass-market fashion is very modern</h2>\r\n\r\n<p>I think the idea of mixing luxury and, very now no one wears head-to-toe designer anymore. There has to be a balance between your mental satisfaction and the financial needs of your company. A girl should be two things: classy and fabulous.</p>\r\n<img alt=\"Happy girl opening her present\" data-caption=\"Happy girl opening her present\" data-entity-type=\"file\" data-entity-uuid=\"fb617b01-62c2-44cc-bb6c-91260980b39d\" src=\"/sites/default/files/inline-images/p3%20%281%29.jpg\" />\r\n<p>I never look at other people’s work. I can’t get sucked into that celebrity thing, because I think it’s just crass. Give me time and I’ll give you a revolution. I can’t get sucked into that celebrity thing, because I think it’s just crass.</p>\r\n\r\n<p>I can design a collection in a day and I always do, cause I’ve always got a load of Italians on my back, moaning that it’s late. Sometimes the simplest things are the most profound.</p>\r\n\r\n<p><img alt=\"Looking to the future with optimism\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"9dbe8fff-5f6c-4036-944f-ea11e3b30049\" src=\"/sites/default/files/inline-images/1.jpg\" /></p>\r\n\r\n<p>Luxury will be always around, no matter what happens in the world. There is always the new project, the new opportunity. Attention to detail is of utmost importance when you want to look good. I have a fantastic relationship with money. I use it to buy my freedom.</p>\r\n\r\n<p>I think the idea of mixing luxury and mass-market fashion is very modern, very now no one wears head-to-toe designer anymore. I think the idea of mixing luxury and mass-market fashion is very modern, very now no one wears head-to-toe designer anymore.</p>\r\n\r\n<p>Confidence. If you have it, you can make anything look good. Abstinence from coffee, tobacco. Adventists has afforded a near-unique opportunity.</p>\r\n\r\n<h3>Clothes can transform your mood and confidence</h3>\r\n\r\n<p>I think the idea of mixing luxury and mass-market fashion is very modern, very now no one wears head-to-toe designer anymore. I want people to be afraid of the women I dress. Elegance isn’t solely defined by what you wear. Clothes can transform your mood and confidence.</p>\r\n\r\n<p>Fashion moves so quickly that, unless you have a strong point of view, you can lose integrity. I like to be real. I don’t like things to be staged or fussy. I think I’d go mad if I didn’t have a place to escape to. You have to stay true to your heritage, that’s what your brand is about.</p>\r\n<img alt=\"People out on the streets again\" data-align=\"center\" data-caption=\"People out on the streets again\" data-entity-type=\"file\" data-entity-uuid=\"a2fd88bd-bb2e-4bb7-93a8-f463c814b860\" src=\"/sites/default/files/inline-images/2.jpg\" />\r\n<p>Elegance is not the prerogative of those who have just escaped from adolescence, but of those who have already taken possession of their future.</p>\r\n\r\n<p>Fashion fosters cliches of beauty, but I want to tear them apart. Every day I’m thinking about change. The only way to do something in depth is to work hard. For me, art is about learning. I’ve always tried to push myself technically and to push myself visually. That’s been part of the journey. I adore the challenge of creating truly modern clothes, where a woman’s personality and sense of self are revealed.</p>\r\n"
+    summary: ''
+    format: full_html
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

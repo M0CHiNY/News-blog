@@ -1,0 +1,8 @@
+uuid: 6d89d4eb-eebe-4345-a11b-5169ba657901
+langcode: en
+status: true
+dependencies: {  }
+id: image
+label: Advertisement
+revision: 0
+description: ''

@@ -1,0 +1,7 @@
+uuid: c1a460b1-7533-407f-b9c7-a4a29b73537e
+langcode: en
+status: true
+dependencies: {  }
+name: social
+label: 'social (40 x 40 )'
+effects: {  }

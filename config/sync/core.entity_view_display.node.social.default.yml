@@ -1,0 +1,46 @@
+uuid: e43fdc84-c10e-4f4d-bdc1-5ed4dff10699
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social.field_images
+    - field.field.node.social.field_social_links
+    - node.type.social
+  module:
+    - image
+    - link
+    - user
+id: node.social.default
+targetEntityType: node
+bundle: social
+mode: default
+content:
+  field_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_social_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
