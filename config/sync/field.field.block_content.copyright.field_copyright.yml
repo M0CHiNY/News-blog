@@ -1,0 +1,21 @@
+uuid: 2bd964c2-0c11-49b0-8cd8-5bd4793a0674
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright
+    - field.storage.block_content.field_copyright
+  module:
+    - text
+id: block_content.copyright.field_copyright
+field_name: field_copyright
+entity_type: block_content
+bundle: copyright
+label: Copyright
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

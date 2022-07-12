@@ -1,0 +1,24 @@
+uuid: ae89008e-2921-4ec8-9db6-9e0838e0dd5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.footer_social
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__footer_social_block_1
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'views_block:footer_social-block_1'
+settings:
+  id: 'views_block:footer_social-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
