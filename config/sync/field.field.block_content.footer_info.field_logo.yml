@@ -1,0 +1,29 @@
+uuid: a2a33d71-638b-405e-b621-89820c1de865
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_info
+    - field.storage.block_content.field_logo
+    - media.type.image
+id: block_content.footer_info.field_logo
+field_name: field_logo
+entity_type: block_content
+bundle: footer_info
+label: logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
