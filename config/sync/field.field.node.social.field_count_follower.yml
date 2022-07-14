@@ -1,0 +1,23 @@
+uuid: 7b2e0bd2-634e-44c8-9d41-72f10ea41aa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_count_follower
+    - node.type.social
+id: node.social.field_count_follower
+field_name: field_count_follower
+entity_type: node
+bundle: social
+label: 'Count follower'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

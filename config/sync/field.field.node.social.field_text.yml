@@ -1,0 +1,19 @@
+uuid: f70028ae-57c9-4cb9-9e4a-5d396001b1af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - node.type.social
+id: node.social.field_text
+field_name: field_text
+entity_type: node
+bundle: social
+label: text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

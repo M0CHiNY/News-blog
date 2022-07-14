@@ -1,21 +1,21 @@
-uuid: ae89008e-2921-4ec8-9db6-9e0838e0dd5d
+uuid: df694507-3655-46db-9992-79925b5b6f27
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.footer_social
+    - views.view.popular_articles_block
   module:
     - views
   theme:
     - olivero
-id: views_block__footer_social_block_1
+id: views_block__popular_articles_block_block_1
 theme: olivero
-region: footer_top
+region: hero
 weight: 0
 provider: null
-plugin: 'views_block:footer_social-block_1'
+plugin: 'views_block:popular_articles_block-block_1'
 settings:
-  id: 'views_block:footer_social-block_1'
+  id: 'views_block:popular_articles_block-block_1'
   label: ''
   label_display: '0'
   provider: views

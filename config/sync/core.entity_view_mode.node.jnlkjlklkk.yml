@@ -1,0 +1,10 @@
+uuid: 59b20f98-9192-49a3-b39a-07712c4ceab3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.jnlkjlklkk
+label: jnlkjlklkk
+targetEntityType: node
+cache: true

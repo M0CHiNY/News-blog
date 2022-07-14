@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.social.field_count_follower
     - field.field.node.social.field_images
     - field.field.node.social.field_social_links
+    - field.field.node.social.field_text
     - image.style.thumbnail
     - node.type.social
   module:
@@ -22,6 +24,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_count_follower:
+    type: number
+    weight: 125
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   field_images:
     type: image_image
     weight: 122
@@ -37,6 +46,14 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_text:
+    type: string_textfield
+    weight: 126
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
