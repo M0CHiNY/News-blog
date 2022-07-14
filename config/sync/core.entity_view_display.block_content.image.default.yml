@@ -5,7 +5,12 @@ dependencies:
   config:
     - block_content.type.image
     - field.field.block_content.image.body
+    - field.field.block_content.image.field_image
+    - field.field.block_content.image.field_link
+    - image.style.advertisement_size_300_250_
   module:
+    - link
+    - media
     - text
 id: block_content.image.default
 targetEntityType: block_content
@@ -18,5 +23,28 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: advertisement_size_300_250_
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }
