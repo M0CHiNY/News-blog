@@ -1,0 +1,15 @@
+uuid: 48852858-4a58-4e75-a772-b6643a1b181c
+langcode: en
+status: true
+dependencies: {  }
+name: travel_guides_711_782_
+label: 'travel guides (711× 782)'
+effects:
+  982a58d0-a73a-42e4-96ab-02406676715b:
+    uuid: 982a58d0-a73a-42e4-96ab-02406676715b
+    id: image_scale
+    weight: 1
+    data:
+      width: 711
+      height: 782
+      upscale: false
