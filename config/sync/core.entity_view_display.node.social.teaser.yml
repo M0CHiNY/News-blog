@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.social.field_images
     - field.field.node.social.field_social_links
     - field.field.node.social.field_text
+    - field.field.node.social.field_the_main_social_networks
     - node.type.social
   module:
     - user
@@ -26,3 +27,4 @@ hidden:
   field_images: true
   field_social_links: true
   field_text: true
+  field_the_main_social_networks: true
