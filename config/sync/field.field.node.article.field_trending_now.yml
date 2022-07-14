@@ -1,0 +1,23 @@
+uuid: 56a6808a-5290-49a7-b520-9b5b9e81f411
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trending_now
+    - node.type.article
+id: node.article.field_trending_now
+field_name: field_trending_now
+entity_type: node
+bundle: article
+label: 'Trending now'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

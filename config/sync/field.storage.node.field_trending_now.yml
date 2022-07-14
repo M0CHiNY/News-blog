@@ -1,16 +1,14 @@
-uuid: 9c7dfca0-2e34-4072-908a-bcea20b128cf
+uuid: ecb8866e-db9b-423c-b492-30911430b2f9
 langcode: en
 status: true
 dependencies:
   module:
-    - media
     - node
-id: node.field_image
-field_name: field_image
+id: node.field_trending_now
+field_name: field_trending_now
 entity_type: node
-type: entity_reference
-settings:
-  target_type: media
+type: boolean
+settings: {  }
 module: core
 locked: false
 cardinality: 1
