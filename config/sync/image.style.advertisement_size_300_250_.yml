@@ -1,0 +1,15 @@
+uuid: de7d79f8-9cad-4518-b830-dba241d82ebc
+langcode: en
+status: true
+dependencies: {  }
+name: advertisement_size_300_250_
+label: 'advertisement  size (300×250)'
+effects:
+  a334bc36-bbc1-4e42-b7f9-2dd57d94d7b0:
+    uuid: a334bc36-bbc1-4e42-b7f9-2dd57d94d7b0
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: 250
+      upscale: false
