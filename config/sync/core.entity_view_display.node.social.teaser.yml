@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.social.field_count_follower
     - field.field.node.social.field_images
     - field.field.node.social.field_social_links
+    - field.field.node.social.field_text
+    - field.field.node.social.field_the_main_social_networks
     - node.type.social
   module:
     - user
@@ -20,5 +23,8 @@ content:
     weight: 100
     region: content
 hidden:
+  field_count_follower: true
   field_images: true
   field_social_links: true
+  field_text: true
+  field_the_main_social_networks: true
