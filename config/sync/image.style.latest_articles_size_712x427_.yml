@@ -1,0 +1,15 @@
+uuid: 1a0629c6-7b34-49fd-9206-b95c6372fa4d
+langcode: en
+status: true
+dependencies: {  }
+name: latest_articles_size_712x427_
+label: 'latest articles size (712x427)'
+effects:
+  1523e0b2-fb4c-4b95-a8f5-e1b3e0f98667:
+    uuid: 1523e0b2-fb4c-4b95-a8f5-e1b3e0f98667
+    id: image_scale
+    weight: 1
+    data:
+      width: 712
+      height: 427
+      upscale: false
