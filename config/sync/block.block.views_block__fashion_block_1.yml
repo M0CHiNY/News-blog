@@ -1,21 +1,21 @@
-uuid: 1a9504fd-d587-415f-9ff3-081736f20961
+uuid: 54338d76-de3d-49f6-b36f-392cd30653e6
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.global_news
+    - views.view.fashion
   module:
     - views
   theme:
     - olivero
-id: views_block__global_news_block_1
+id: views_block__fashion_block_1
 theme: olivero
 region: hero
-weight: -10
+weight: 0
 provider: null
-plugin: 'views_block:global_news-block_1'
+plugin: 'views_block:fashion-block_1'
 settings:
-  id: 'views_block:global_news-block_1'
+  id: 'views_block:fashion-block_1'
   label: ''
   label_display: visible
   provider: views
