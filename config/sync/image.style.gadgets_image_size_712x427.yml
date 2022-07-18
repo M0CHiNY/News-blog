@@ -1,0 +1,15 @@
+uuid: 5ad5ace7-b854-4f48-8d28-8d3abc75096e
+langcode: en
+status: true
+dependencies: {  }
+name: gadgets_image_size_712x427
+label: 'gadgets image size 712x427'
+effects:
+  b7452c32-5c1b-4064-b594-02c603606b64:
+    uuid: b7452c32-5c1b-4064-b594-02c603606b64
+    id: image_scale
+    weight: 1
+    data:
+      width: 712
+      height: 427
+      upscale: false

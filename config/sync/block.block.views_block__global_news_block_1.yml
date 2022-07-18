@@ -1,21 +1,21 @@
-uuid: 3ef18e9d-ce97-485c-8ea6-1d95e5a69d82
+uuid: 1a9504fd-d587-415f-9ff3-081736f20961
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.trending_now
+    - views.view.global_news
   module:
     - views
   theme:
     - olivero
-id: views_block__trending_now_block_1
+id: views_block__global_news_block_1
 theme: olivero
 region: hero
-weight: -12
+weight: -10
 provider: null
-plugin: 'views_block:trending_now-block_1'
+plugin: 'views_block:global_news-block_1'
 settings:
-  id: 'views_block:trending_now-block_1'
+  id: 'views_block:global_news-block_1'
   label: ''
   label_display: visible
   provider: views

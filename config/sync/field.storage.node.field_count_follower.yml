@@ -1,16 +1,14 @@
-uuid: 9c7dfca0-2e34-4072-908a-bcea20b128cf
+uuid: f0d0c7c7-f058-42ae-960c-57087002011d
 langcode: en
 status: true
 dependencies:
   module:
-    - media
     - node
-id: node.field_image
-field_name: field_image
+id: node.field_count_follower
+field_name: field_count_follower
 entity_type: node
-type: entity_reference
-settings:
-  target_type: media
+type: float
+settings: {  }
 module: core
 locked: false
 cardinality: 1

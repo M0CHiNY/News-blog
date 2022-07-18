@@ -1,0 +1,15 @@
+uuid: 17c9f295-ac00-4ba9-be82-384a82433794
+langcode: en
+status: true
+dependencies: {  }
+name: image_size_710_468
+label: 'Image size 710x468'
+effects:
+  3e0b9711-1009-4517-9338-879bacd08063:
+    uuid: 3e0b9711-1009-4517-9338-879bacd08063
+    id: image_scale
+    weight: 1
+    data:
+      width: 710
+      height: 468
+      upscale: false

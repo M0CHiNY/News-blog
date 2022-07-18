@@ -1,21 +1,21 @@
-uuid: 3ef18e9d-ce97-485c-8ea6-1d95e5a69d82
+uuid: 0b498ccf-1ad7-47a1-9d69-65b3885b8db3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.trending_now
+    - views.view.travel_guides
   module:
     - views
   theme:
     - olivero
-id: views_block__trending_now_block_1
+id: views_block__travel_guides_block_1
 theme: olivero
 region: hero
-weight: -12
+weight: -9
 provider: null
-plugin: 'views_block:trending_now-block_1'
+plugin: 'views_block:travel_guides-block_1'
 settings:
-  id: 'views_block:trending_now-block_1'
+  id: 'views_block:travel_guides-block_1'
   label: ''
   label_display: visible
   provider: views

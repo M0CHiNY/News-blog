@@ -1,0 +1,15 @@
+uuid: c40d003d-55b3-49d8-9c2d-0903b3f7f404
+langcode: en
+status: true
+dependencies: {  }
+name: image_size_212_160
+label: 'image size 212 x 160'
+effects:
+  53fd83ab-ddec-45af-9c17-0f48d2b5dfbe:
+    uuid: 53fd83ab-ddec-45af-9c17-0f48d2b5dfbe
+    id: image_scale
+    weight: 1
+    data:
+      width: 212
+      height: 160
+      upscale: false

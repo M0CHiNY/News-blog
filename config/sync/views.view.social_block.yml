@@ -1,18 +1,20 @@
-uuid: 83a5cb4b-82cd-4066-af7e-608ed2a08a70
+uuid: 0ae7b6f8-1343-439c-bffd-9721dfd4ff9b
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_count_follower
     - field.storage.node.field_images
     - field.storage.node.field_social_links
+    - field.storage.node.field_text
     - node.type.social
   module:
     - image
     - link
     - node
     - user
-id: footer_social
-label: footer-social
+id: social_block
+label: 'social block'
 module: views
 description: ''
 tag: ''
@@ -25,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: footer-social-footer
+      title: 'Main social block'
       fields:
         field_social_links:
           id: field_social_links
@@ -108,9 +110,9 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: ''
+            path: '{{ field_social_links }} '
             absolute: false
-            external: false
+            external: true
             replace_spaces: false
             path_case: none
             trim_whitespace: false
@@ -160,11 +162,140 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_count_follower:
+          id: field_count_follower
+          table: node__field_count_follower
+          field: field_count_follower
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_decimal
+          settings:
+            thousand_separator: ','
+            decimal_separator: ','
+            scale: 4
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_text:
+          id: field_text
+          table: node__field_text
+          field: field_text
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       pager:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -227,8 +358,55 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_the_main_social_networks_value:
+          id: field_the_main_social_networks_value
+          table: node__field_the_main_social_networks
+          field: field_the_main_social_networks_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
-        type: default
+        type: grid
+        options:
+          grouping: {  }
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
       row:
         type: fields
       query:
@@ -251,14 +429,17 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_count_follower'
         - 'config:field.storage.node.field_images'
         - 'config:field.storage.node.field_social_links'
+        - 'config:field.storage.node.field_text'
   block_1:
     id: block_1
-    display_title: Block
+    display_title: 'Main social networks'
     display_plugin: block
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -268,5 +449,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_count_follower'
         - 'config:field.storage.node.field_images'
         - 'config:field.storage.node.field_social_links'
+        - 'config:field.storage.node.field_text'

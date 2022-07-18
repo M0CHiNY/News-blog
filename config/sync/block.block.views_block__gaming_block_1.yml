@@ -1,21 +1,21 @@
-uuid: 3ef18e9d-ce97-485c-8ea6-1d95e5a69d82
+uuid: 04fe2a68-b70c-4726-b43e-1797cfeb65f9
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.trending_now
+    - views.view.gaming
   module:
     - views
   theme:
     - olivero
-id: views_block__trending_now_block_1
+id: views_block__gaming_block_1
 theme: olivero
 region: hero
-weight: -12
+weight: 0
 provider: null
-plugin: 'views_block:trending_now-block_1'
+plugin: 'views_block:gaming-block_1'
 settings:
-  id: 'views_block:trending_now-block_1'
+  id: 'views_block:gaming-block_1'
   label: ''
   label_display: visible
   provider: views
