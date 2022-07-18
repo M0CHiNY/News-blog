@@ -1,0 +1,23 @@
+uuid: e56959d5-328d-4ed7-8480-054737493520
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_the_main_social_networks
+    - node.type.social
+id: node.social.field_the_main_social_networks
+field_name: field_the_main_social_networks
+entity_type: node
+bundle: social
+label: 'The main social networks'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

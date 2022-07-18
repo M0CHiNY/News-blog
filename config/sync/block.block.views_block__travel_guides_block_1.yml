@@ -1,0 +1,24 @@
+uuid: 0b498ccf-1ad7-47a1-9d69-65b3885b8db3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.travel_guides
+  module:
+    - views
+  theme:
+    - olivero
+id: views_block__travel_guides_block_1
+theme: olivero
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'views_block:travel_guides-block_1'
+settings:
+  id: 'views_block:travel_guides-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }
