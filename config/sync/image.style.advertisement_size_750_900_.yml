@@ -1,0 +1,15 @@
+uuid: b32b861a-03f9-4b0a-b7e0-92eb23ce6c41
+langcode: en
+status: true
+dependencies: {  }
+name: advertisement_size_750_900_
+label: 'fashion size (750×900)'
+effects:
+  c152b4a5-b706-46f7-8df3-c7e0c429d80b:
+    uuid: c152b4a5-b706-46f7-8df3-c7e0c429d80b
+    id: image_crop
+    weight: 1
+    data:
+      width: 750
+      height: 900
+      anchor: center-center
