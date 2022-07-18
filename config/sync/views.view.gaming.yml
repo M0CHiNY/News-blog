@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_image
     - field.storage.node.field_tags
+    - image.style.image_size_710_468
     - node.type.article
   module:
     - media
@@ -81,7 +82,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: content
-            image_style: ''
+            image_style: image_size_710_468
             image_loading:
               attribute: lazy
           group_column: target_id
