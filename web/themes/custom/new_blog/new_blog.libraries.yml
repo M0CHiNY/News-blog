@@ -1,0 +1,6 @@
+# Main theme library.
+global-styling:
+  css:
+    base:
+      dist/style.css: {}
+
