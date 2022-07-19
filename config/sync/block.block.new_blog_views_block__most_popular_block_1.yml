@@ -1,4 +1,4 @@
-uuid: 91973ef4-8230-4a9e-bd3b-496148cc11b7
+uuid: dd25ff11-4570-4478-bcdb-4df81be32a55
 langcode: en
 status: false
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - views
   theme:
-    - olivero
-id: views_block__most_popular_block_1
-theme: olivero
-region: sidebar
+    - new_blog
+id: new_blog_views_block__most_popular_block_1
+theme: new_blog
+region: header
 weight: 0
 provider: null
 plugin: 'views_block:most_popular-block_1'

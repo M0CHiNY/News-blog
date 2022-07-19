@@ -1,4 +1,4 @@
-uuid: 72eb1133-7fda-4594-a450-8e786126cac2
+uuid: 7c870a93-cdec-4693-a38a-62cc2fa82bb0
 langcode: en
 status: false
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - views
   theme:
-    - olivero
-id: views_block__gadgest_block_1
-theme: olivero
-region: highlighted
+    - new_blog
+id: new_blog_views_block__gadgest_block_1
+theme: new_blog
+region: header
 weight: -10
 provider: null
 plugin: 'views_block:gadgest-block_1'

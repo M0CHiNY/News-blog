@@ -1,4 +1,4 @@
-uuid: 3ef18e9d-ce97-485c-8ea6-1d95e5a69d82
+uuid: abcc404d-be1e-4cb9-a8fa-066ea5b4b8cb
 langcode: en
 status: false
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - views
   theme:
-    - olivero
-id: views_block__trending_now_block_1
-theme: olivero
-region: highlighted
+    - new_blog
+id: new_blog_views_block__trending_now_block_1
+theme: new_blog
+region: header
 weight: -14
 provider: null
 plugin: 'views_block:trending_now-block_1'

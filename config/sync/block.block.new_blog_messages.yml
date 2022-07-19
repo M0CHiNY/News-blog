@@ -1,16 +1,16 @@
-uuid: bec534b0-236f-48d9-9129-dfeea74fc0bb
+uuid: be5f7173-4cf9-45ac-bef1-8ea4e6e00329
 langcode: en
 status: false
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - new_blog
 _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
-id: olivero_messages
-theme: olivero
-region: highlighted
+id: new_blog_messages
+theme: new_blog
+region: header
 weight: -8
 provider: null
 plugin: system_messages_block

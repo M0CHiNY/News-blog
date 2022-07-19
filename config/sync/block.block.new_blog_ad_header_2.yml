@@ -1,0 +1,25 @@
+uuid: 8e5a8b2c-a48b-46fe-af21-a82356a61748
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fa4bd8da-4fd0-4426-bf09-2fff8e05a1ff'
+  module:
+    - block_content
+  theme:
+    - new_blog
+id: new_blog_ad_header_2
+theme: new_blog
+region: header
+weight: -3
+provider: null
+plugin: 'block_content:fa4bd8da-4fd0-4426-bf09-2fff8e05a1ff'
+settings:
+  id: 'block_content:fa4bd8da-4fd0-4426-bf09-2fff8e05a1ff'
+  label: ad_header
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,14 +1,14 @@
-uuid: c4a52a0f-fd71-4fa8-a078-f72170650551
+uuid: a884fb8a-e2a6-46aa-9fae-da0dc829d052
 langcode: en
 status: false
 dependencies:
   theme:
-    - olivero
+    - new_blog
 _core:
   default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
-id: olivero_primary_admin_actions
-theme: olivero
-region: highlighted
+id: new_blog_primary_admin_actions
+theme: new_blog
+region: header
 weight: -9
 provider: null
 plugin: local_actions_block

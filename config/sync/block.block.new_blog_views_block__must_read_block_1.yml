@@ -1,4 +1,4 @@
-uuid: b109adc2-ca4e-4566-9aa4-d52abcbebc6d
+uuid: bb94350c-28cb-49b0-b68d-af8305fd9a7a
 langcode: en
 status: false
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - views
   theme:
-    - olivero
-id: views_block__must_read_block_1
-theme: olivero
-region: content_below
+    - new_blog
+id: new_blog_views_block__must_read_block_1
+theme: new_blog
+region: header
 weight: -12
 provider: null
 plugin: 'views_block:must_read-block_1'

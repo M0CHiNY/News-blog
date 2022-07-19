@@ -1,4 +1,4 @@
-uuid: ece8834a-e5a0-4322-a9e1-c4c474fe2798
+uuid: fa1f8cce-31be-43e9-a84c-09278f80f396
 langcode: en
 status: false
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - views
   theme:
-    - olivero
-id: views_block__receiptes_block_1
-theme: olivero
-region: content_above
+    - new_blog
+id: new_blog_views_block__receiptes_block_1
+theme: new_blog
+region: header
 weight: 0
 provider: null
 plugin: 'views_block:receiptes-block_1'

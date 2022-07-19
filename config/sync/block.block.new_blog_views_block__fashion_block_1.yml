@@ -1,4 +1,4 @@
-uuid: 54338d76-de3d-49f6-b36f-392cd30653e6
+uuid: 4a80554c-9823-431a-a702-e69459206c9f
 langcode: en
 status: false
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - views
   theme:
-    - olivero
-id: views_block__fashion_block_1
-theme: olivero
+    - new_blog
+id: new_blog_views_block__fashion_block_1
+theme: new_blog
 region: breadcrumb
 weight: -14
 provider: null

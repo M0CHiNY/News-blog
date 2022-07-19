@@ -1,0 +1,25 @@
+uuid: e676f26f-ae23-4593-b877-f645cfc3670e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:weather:b9c2432e-8b30-494b-8b90-fb31f829094f'
+  module:
+    - block_content
+  theme:
+    - new_blog
+id: new_blog_weather
+theme: new_blog
+region: header
+weight: -8
+provider: null
+plugin: 'block_content:b9c2432e-8b30-494b-8b90-fb31f829094f'
+settings:
+  id: 'block_content:b9c2432e-8b30-494b-8b90-fb31f829094f'
+  label: Weather
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

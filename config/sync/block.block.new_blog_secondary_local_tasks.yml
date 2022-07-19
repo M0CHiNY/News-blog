@@ -1,14 +1,14 @@
-uuid: 8d52bec7-4633-4c4f-b15f-66f2f37d15c2
+uuid: 8de7e249-fe92-431b-af8c-38bb0d28cb03
 langcode: en
 status: false
 dependencies:
   theme:
-    - olivero
+    - new_blog
 _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
-id: olivero_secondary_local_tasks
-theme: olivero
-region: highlighted
+id: new_blog_secondary_local_tasks
+theme: new_blog
+region: header
 weight: -6
 provider: null
 plugin: local_tasks_block

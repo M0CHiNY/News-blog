@@ -1,0 +1,25 @@
+uuid: bbb11793-921a-44e4-a795-1430c234477d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:data:80e675ef-0638-4247-9146-6e5f544fc89f'
+  module:
+    - block_content
+  theme:
+    - new_blog
+id: new_blog_date
+theme: new_blog
+region: header
+weight: -7
+provider: null
+plugin: 'block_content:80e675ef-0638-4247-9146-6e5f544fc89f'
+settings:
+  id: 'block_content:80e675ef-0638-4247-9146-6e5f544fc89f'
+  label: date
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
