@@ -1,6 +1,6 @@
 uuid: 54338d76-de3d-49f6-b36f-392cd30653e6
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.fashion

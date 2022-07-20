@@ -1,0 +1,25 @@
+uuid: 6e0b1902-315d-423f-a426-a5efbe2f8fc9
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:image:a9c11207-9b75-4187-a77f-f5a4bd3c4d80'
+  module:
+    - block_content
+  theme:
+    - new_blog
+id: new_blog_advertisement
+theme: new_blog
+region: header
+weight: -11
+provider: null
+plugin: 'block_content:a9c11207-9b75-4187-a77f-f5a4bd3c4d80'
+settings:
+  id: 'block_content:a9c11207-9b75-4187-a77f-f5a4bd3c4d80'
+  label: '- Advertisement -'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

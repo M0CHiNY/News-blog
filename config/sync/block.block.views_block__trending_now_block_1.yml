@@ -1,6 +1,6 @@
 uuid: 3ef18e9d-ce97-485c-8ea6-1d95e5a69d82
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.trending_now

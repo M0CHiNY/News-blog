@@ -1,6 +1,6 @@
 uuid: ece8834a-e5a0-4322-a9e1-c4c474fe2798
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.receiptes

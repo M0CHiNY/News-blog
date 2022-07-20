@@ -1,0 +1,20 @@
+uuid: a884fb8a-e2a6-46aa-9fae-da0dc829d052
+langcode: en
+status: false
+dependencies:
+  theme:
+    - new_blog
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: new_blog_primary_admin_actions
+theme: new_blog
+region: header
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

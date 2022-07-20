@@ -1,0 +1,30 @@
+{
+  "name": "light-webpack",
+  "version": "1.0.0",
+  "description": "Webpack example",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.5.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-sass": "^7.0.1",
+    "node-sass-glob-importer": "^3.0.2",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^13.0.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build:dev": "webpack --config webpack.config.js --mode development",
+    "start": "webpack --watch",
+    "start:dev": "webpack --watch --mode development"
+  },
+  "author": "ThinkShout, Inc",
+  "license": "GPL-3.0",
+  "main": "webpack.config.js"
+}

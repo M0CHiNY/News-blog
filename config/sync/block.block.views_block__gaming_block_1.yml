@@ -1,6 +1,6 @@
 uuid: 04fe2a68-b70c-4726-b43e-1797cfeb65f9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.gaming

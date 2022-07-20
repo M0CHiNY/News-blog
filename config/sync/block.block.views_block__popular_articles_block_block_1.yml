@@ -1,6 +1,6 @@
 uuid: df694507-3655-46db-9992-79925b5b6f27
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.popular_articles_block

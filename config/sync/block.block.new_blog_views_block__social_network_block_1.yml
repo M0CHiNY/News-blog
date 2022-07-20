@@ -1,0 +1,24 @@
+uuid: c7446186-abbd-4412-8d8d-23b3406aae35
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.social_network
+  module:
+    - views
+  theme:
+    - new_blog
+id: new_blog_views_block__social_network_block_1
+theme: new_blog
+region: header
+weight: -5
+provider: null
+plugin: 'views_block:social_network-block_1'
+settings:
+  id: 'views_block:social_network-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

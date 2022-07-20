@@ -1,6 +1,6 @@
 uuid: 0126b0b6-c3f6-4034-9a78-2a5ff61cb1fa
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.categories

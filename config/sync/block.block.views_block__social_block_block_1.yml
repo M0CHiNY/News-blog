@@ -1,6 +1,6 @@
 uuid: 114ea86e-f6dd-4247-8bd9-1c1746c39af2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.social_block

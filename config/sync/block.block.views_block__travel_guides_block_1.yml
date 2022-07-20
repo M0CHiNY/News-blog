@@ -1,6 +1,6 @@
 uuid: 0b498ccf-1ad7-47a1-9d69-65b3885b8db3
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.travel_guides

@@ -1,0 +1,24 @@
+uuid: 23fff6bc-7359-47d1-a679-c0d59dc30f05
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.global_news
+  module:
+    - views
+  theme:
+    - new_blog
+id: new_blog_views_block__global_news_block_1
+theme: new_blog
+region: header
+weight: -12
+provider: null
+plugin: 'views_block:global_news-block_1'
+settings:
+  id: 'views_block:global_news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: f59b6e11-be6a-4791-afe2-06fe365965ae
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.social_block
+  module:
+    - views
+  theme:
+    - new_blog
+id: new_blog_views_block__social_block_block_1
+theme: new_blog
+region: header
+weight: -12
+provider: null
+plugin: 'views_block:social_block-block_1'
+settings:
+  id: 'views_block:social_block-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: abcc404d-be1e-4cb9-a8fa-066ea5b4b8cb
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.trending_now
+  module:
+    - views
+  theme:
+    - new_blog
+id: new_blog_views_block__trending_now_block_1
+theme: new_blog
+region: header
+weight: -14
+provider: null
+plugin: 'views_block:trending_now-block_1'
+settings:
+  id: 'views_block:trending_now-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

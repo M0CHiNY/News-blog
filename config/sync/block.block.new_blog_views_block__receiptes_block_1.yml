@@ -1,0 +1,24 @@
+uuid: fa1f8cce-31be-43e9-a84c-09278f80f396
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.receiptes
+  module:
+    - views
+  theme:
+    - new_blog
+id: new_blog_views_block__receiptes_block_1
+theme: new_blog
+region: header
+weight: 0
+provider: null
+plugin: 'views_block:receiptes-block_1'
+settings:
+  id: 'views_block:receiptes-block_1'
+  label: receipes
+  label_display: visible
+  provider: views
+  views_label: receipes
+  items_per_page: none
+visibility: {  }
