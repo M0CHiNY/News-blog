@@ -13,6 +13,7 @@ dependencies:
     - 'taxonomy_term:tags:53bac0f4-796a-43e5-81e0-8932c86bcec5'
   module:
     - image
+    - media
     - node
     - taxonomy
     - user
@@ -618,9 +619,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: media_thumbnail
           settings:
-            image_link: ''
+            image_link: content
             image_style: image_size_212_160
             image_loading:
               attribute: lazy
@@ -908,9 +909,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: media_thumbnail
           settings:
-            image_link: ''
+            image_link: content
             image_style: image_size_710_468
             image_loading:
               attribute: lazy

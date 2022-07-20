@@ -1,0 +1,23 @@
+uuid: b32d4dce-fb30-4492-97d3-5ce6fa265be5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_popular_article_add
+    - node.type.article
+id: node.article.field_popular_article_add
+field_name: field_popular_article_add
+entity_type: node
+bundle: article
+label: 'Popular article add'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
