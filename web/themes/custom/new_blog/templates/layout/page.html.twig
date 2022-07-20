@@ -1,0 +1,136 @@
+{#
+/**
+ * @file
+ * News blog theme implementation to display a single page.
+ * Base theme: olivero.
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.content: The main content of the current page.
+ * - page.sidebar: Items for the first sidebar.
+ * - page.featured_bottom_first: Items for the first featured bottom region.
+ * - page.featured_bottom_second: Items for the second featured bottom region.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ * - page.social: Items for the social region.
+ * - page.footer_first: Items for the first footer column.
+ * - page.footer_second: Items for the second footer column.
+ */
+#}
+
+    {% if page.header or page.primary_menu %}
+
+      <header class="header">
+        <div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
+          <div class="container">
+            {{ page.header }}
+            {% if page.primary_menu %}
+
+              <div class="mobile-buttons" data-drupal-selector="mobile-buttons">
+                <button class="mobile-nav-button" data-drupal-selector="mobile-nav-button"
+                        aria-label="{{ 'Main Menu'|t }}" aria-controls="header-nav" aria-expanded="false">
+                  <span class="mobile-nav-button__label">{{ 'Menu'|t }}</span>
+                  <span class="mobile-nav-button__icon"></span>
+                </button>
+              </div>
+
+              <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
+                {{ page.primary_menu }}
+              </div>
+
+            {% endif %}
+
+          </div>
+        </div>
+        </div>
+      </header>
+
+    {% endif %}
+
+
+<div class="wrapper">
+
+  {#        {% if page.breadcrumb %} #}
+  {#          {{ page.breadcrumb }} #}
+  {#        {% endif %} #}
+
+  <main class="main">
+
+    <section class="section__one">
+      <div class="container">
+        <div class="section__one-hero">
+          {{ page.hero }}
+        </div>
+      </div>
+    </section>
+
+    <section class="section__two">
+      <div class="inner__box">
+        <div class="content__inner">
+          {{ page.content_top }}
+        </div>
+
+        {% if page.block_one %}
+          <div class="block-one__inner">
+            {{ page.block_one }}
+          </div>
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="section__tree">
+      {% if page.hero_2 %}
+        <div class="content-bellow__inner">
+          {{ page.hero_2 }}
+        </div>
+      {% endif %}
+    </section>
+
+    <section class="section__four">
+      <div class="inner__box">
+
+        <div class="content__inner">
+          {{ page.content_center }}
+        </div>
+
+        {% if page.block_two %}
+          <div class="block-one__inner">
+            {{ page.block_two }}
+          </div>
+        {% endif %}
+
+      </div>
+    </section>
+    {% if page.hero_3 %}
+      <div class="content-bellow__inner">
+        {{ page.hero_3 }}
+      </div>
+    {% endif %}
+
+    <div class="inner__box">
+      <div class="content__inner">
+        {{ page.content_bottom }}
+      </div>
+
+      {% if page.block_three %}
+        <div class="block-one__inner">
+          {{ page.block_three }}
+        </div>
+      {% endif %}
+
+    </div>
+
+  </main>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    {{ page.footer_top }}
+    {{ page.footer_bottom }}
+  </div>
+</footer>
+
+<div class="overlay" data-drupal-selector="overlay"></div>
+
