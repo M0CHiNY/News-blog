@@ -21,7 +21,7 @@
     {% if page.header or page.primary_menu %}
 
       <header class="header">
-        <div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
+
           <div class="container">
             {{ page.header }}
             {% if page.primary_menu %}
@@ -42,7 +42,6 @@
 
           </div>
         </div>
-        </div>
       </header>
 
     {% endif %}
@@ -50,87 +49,110 @@
 
 <div class="wrapper">
 
-  {#        {% if page.breadcrumb %} #}
-  {#          {{ page.breadcrumb }} #}
-  {#        {% endif %} #}
-
   <main class="main">
-
-    <section class="section__one">
-      <div class="container">
-        <div class="section__one-hero">
-          {{ page.hero }}
+    {% if page.breadcrumb %}
+      <section class="breadcrumb">
+        <div class="container">
+          {{ page.breadcrumb }}
         </div>
-      </div>
-    </section>
-
-    <section class="section__two">
-      <div class="inner__box">
-        <div class="content__inner">
-          {{ page.content_top }}
-        </div>
-
-        {% if page.block_one %}
-          <div class="block-one__inner">
-            {{ page.block_one }}
-          </div>
-        {% endif %}
-      </div>
-    </section>
-
-    <section class="section__tree">
-      {% if page.hero_2 %}
-        <div class="content-bellow__inner">
-          {{ page.hero_2 }}
-        </div>
-      {% endif %}
-    </section>
-
-    <section class="section__four">
-      <div class="inner__box">
-
-        <div class="content__inner">
-          {{ page.content_center }}
-        </div>
-
-        {% if page.block_two %}
-          <div class="block-one__inner">
-            {{ page.block_two }}
-          </div>
-        {% endif %}
-
-      </div>
-    </section>
-    {% if page.hero_3 %}
-      <div class="content-bellow__inner">
-        {{ page.hero_3 }}
-      </div>
+      </section>
     {% endif %}
 
-    <div class="inner__box">
-      <div class="content__inner">
-        {{ page.content_bottom }}
-      </div>
-
-      {% if page.block_three %}
-        <div class="block-one__inner">
-          {{ page.block_three }}
+    {% if page.hero %}
+      <section class="section-1">
+        <div class="container">
+          <div class="section__one-hero">
+            {{ page.hero }}
+          </div>
         </div>
-      {% endif %}
+      </section>
+    {% endif %}
 
-    </div>
+    {% if page.content_top %}
+      <section class="section-2">
+        <div class="container">
+          <div class="inner__box">
+            <div class="content__inner">
+              {{ page.content_top }}
+            </div>
+            {% if page.block_one %}
+              <div class="block-one__inner">
+                {{ page.block_one }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.hero_2 %}
+      <section class="section-3">
+        <div class="container">
+          <div class="content-bellow__inner">
+            {{ page.hero_2 }}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.content_center %}
+    <section class="section-4">
+      <div class="container">
+        <div class="inner__box">
+          <div class="content__inner">
+            {{ page.content_center }}
+          </div>
+          {% if page.block_two %}
+            <div class="block-one__inner">
+              {{ page.block_two }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    {% if page.hero_3 %}
+      <section class="section-5">
+        <div class="container">
+          <div class="content-bellow__inner">
+            {{ page.hero_3 }}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.content_bottom %}
+    <section class="section-6">
+      <div class="container">
+        <div class="inner__box">
+          <div class="content__inner">
+            {{ page.content_bottom }}
+          </div>
+          {% if page.block_three %}
+            <div class="block-one__inner">
+              {{ page.block_three }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    {% endif %}
 
   </main>
-
-
 </div>
 
-<footer class="site-footer">
-  <div class="site-footer__inner container">
-    {{ page.footer_top }}
-    {{ page.footer_bottom }}
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      {% if page.footer_top %}
+      <div class="footer__box-1">
+        {{ page.footer_top }}
+      </div>
+      {% endif %}
+      <div class="footer__box-2">
+        {{ page.footer_bottom }}
+      </div>
+    </div>
   </div>
 </footer>
-
-<div class="overlay" data-drupal-selector="overlay"></div>
-
