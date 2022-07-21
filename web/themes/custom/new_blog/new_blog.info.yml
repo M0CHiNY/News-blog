@@ -6,16 +6,22 @@ package: Custom
 core: 8.x
 core_version_requirement: ^8 || ^9
 libraries:
-  - new_blog/global-styling 
+  - new_blog/global-styling
 regions:
-  header: 'Header'
+  header: Header
   primary_menu: 'Primary menu'
-  secondary_menu: 'Secondary menu'
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
-  featured: 'Featured'
-  breadcrumb: 'Breadcrumb'
-  content: 'Content'
-  sidebar_first: 'Sidebar first'
-  sidebar_second: 'Sidebar second'
-  footer: 'Footer'
+  hero: 'Hero 1 (full width)'
+  breadcrumb: Breadcrumb
+  taxonomy: 'Hero 2 (full width)'
+  content_top: Content top
+  block_one: 'block 1'
+  hero_2: 'Hero 2 (full width)'
+  content_center: Content center
+  block_two: 'block 2'
+  content_bottom: Content bottom
+  block_three: 'block 3'
+  hero_3: 'Hero 3 (full width)'
+  content: Content
+  content_below: 'Content Below'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
