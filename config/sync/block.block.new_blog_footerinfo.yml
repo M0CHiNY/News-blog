@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_footerinfo
 theme: new_blog
-region: header
-weight: 0
+region: footer_top
+weight: -15
 provider: null
 plugin: 'block_content:8a4b6483-1e43-45bf-bd54-7c1d566bfc7a'
 settings:

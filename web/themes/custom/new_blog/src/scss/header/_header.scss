@@ -1,1 +1,126 @@
+header {
+  min-height: 234px;
 
+  .header__inner {
+
+    .header__box-1 {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #F4F4F4;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .region.region--header-1 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap:20px;
+        #block-new-blog-weather,
+        #block-new-blog-date,
+        .menu--top-menu{
+          margin-bottom: 0;
+        }
+
+        .field--name-field-date{
+          font-size: 11px;
+          color: #000000;
+        }
+      }
+    }
+
+  }
+
+  .view-content {
+    display: flex;
+
+    .views-row{
+      position: relative;
+      margin-left: 10px;
+    }
+
+    .views-field.views-field-field-images {
+      .field-content img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .views-field.views-field-field-social-links{
+
+      .field-content a {
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+  }
+
+  .block-menu{
+
+    .menu.menu--level-1{
+      display: flex;
+      list-style: none;
+
+      & li {
+        margin-right: 10px;
+        color: #000000;
+        font-size: 11px;
+        cursor:pointer;
+      }
+
+      & li a{
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .block-views-blocksocial-network-block-1{
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  .region.region--header-2{
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    height: 140px;
+
+    .block-system-branding-block{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 141px;
+      & a {
+        width: 272px;
+      }
+
+
+
+    }
+    .site-branding{
+      margin: 0;
+      background-image: none;
+
+      .site-branding__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .site-branding__logo{
+          width: 273px;
+
+        }
+      }
+    }
+  }
+  .ad_header{
+    margin: 0;
+
+
+  }
+}

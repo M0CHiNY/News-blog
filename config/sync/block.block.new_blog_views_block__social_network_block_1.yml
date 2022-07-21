@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__social_network_block_1
 theme: new_blog
-region: header
-weight: -5
+region: header_1
+weight: -13
 provider: null
 plugin: 'views_block:social_network-block_1'
 settings:

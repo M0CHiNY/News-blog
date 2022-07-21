@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__latest_articles_block_1
 theme: new_blog
-region: header
-weight: -11
+region: header_1
+weight: -1
 provider: null
 plugin: 'views_block:latest_articles-block_1'
 settings:

@@ -10,8 +10,8 @@ _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
 id: new_blog_site_branding
 theme: new_blog
-region: header
-weight: -4
+region: header_2
+weight: -15
 provider: null
 plugin: system_branding_block
 settings:

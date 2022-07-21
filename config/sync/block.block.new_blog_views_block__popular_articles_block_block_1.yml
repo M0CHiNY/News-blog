@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__popular_articles_block_block_1
 theme: new_blog
-region: header
-weight: -13
+region: header_1
+weight: -9
 provider: null
 plugin: 'views_block:popular_articles_block-block_1'
 settings:

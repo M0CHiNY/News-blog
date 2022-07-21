@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_date
 theme: new_blog
-region: header
-weight: -7
+region: header_1
+weight: -15
 provider: null
 plugin: 'block_content:80e675ef-0638-4247-9146-6e5f544fc89f'
 settings:
