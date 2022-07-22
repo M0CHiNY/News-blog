@@ -27,6 +27,6 @@
 /*.sql
 /database/*.sql
 /web/themes/custom/*/node_modules
-/web/themes/custom/*/dist
+
 
 
