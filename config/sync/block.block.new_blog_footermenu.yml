@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_footermenu
 theme: new_blog
-region: header
-weight: 0
+region: footer_bottom
+weight: -14
 provider: null
 plugin: 'system_menu_block:footer-menu'
 settings:

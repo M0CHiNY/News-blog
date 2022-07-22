@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__trending_now_block_1
 theme: new_blog
-region: header
-weight: -14
+region: header_1
+weight: -10
 provider: null
 plugin: 'views_block:trending_now-block_1'
 settings:

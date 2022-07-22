@@ -1,0 +1,156 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_vars.scss ***!
+  \**************************************************************************************************************/
+
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_global.scss ***!
+  \****************************************************************************************************************/
+html,
+body {
+  background-image: none;
+  background-color: #FFFFFF; }
+
+.container {
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative; }
+
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_libs.scss ***!
+  \**************************************************************************************************************/
+
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/regions/_regions.scss ***!
+  \*************************************************************************************************************************/
+.header .block-region.demo-block {
+  width: 100%; }
+
+div.wrapper > main > section.breadcrumb > div > div {
+  display: flex; }
+
+.inner__box {
+  width: 100%;
+  display: flex;
+  gap: 40px; }
+  .inner__box .content__inner {
+    max-width: 744px;
+    width: 100%;
+    flex-shrink: 0; }
+  .inner__box .block-one__inner {
+    width: 100%; }
+
+.footer {
+  border: none; }
+  .footer__inner {
+    width: 100%; }
+  .footer div > div > div.footer__box-2 > div,
+  .footer div > div > div.footer__box-1 > div {
+    display: flex; }
+  .footer .region.region--breadcrumb.grid-full.layout--pass--content-medium.ie11-autorow {
+    display: flex; }
+
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_header.scss ***!
+  \***********************************************************************************************************************/
+html,
+body {
+  background-image: none;
+  background-color: #FFFFFF; }
+
+.container {
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative; }
+
+header .header__inner {
+  display: none; }
+  @media (min-width: 768px) {
+    header .header__inner {
+      display: block;
+      margin: 20px 0; }
+      header .header__inner .header__box-1 {
+        background-color: #F4F4F4; }
+        header .header__inner .header__box-1 .region.region--header-1 {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 20px;
+          padding-left: 20px;
+          padding-right: 20px; }
+          header .header__inner .header__box-1 .region.region--header-1 #block-new-blog-weather,
+          header .header__inner .header__box-1 .region.region--header-1 #block-new-blog-date,
+          header .header__inner .header__box-1 .region.region--header-1 .menu--top-menu {
+            margin-bottom: 0; }
+          header .header__inner .header__box-1 .region.region--header-1 .field--name-field-date {
+            font-size: 11px;
+            color: #000000; } }
+
+header .mobile-buttons {
+  margin-top: 0; }
+
+@media (min-width: 768px) {
+  header .view-content {
+    display: flex; }
+    header .view-content .views-row {
+      position: relative;
+      margin-left: 10px; }
+    header .view-content .views-field.views-field-field-images .field-content img {
+      width: 20px;
+      height: 20px; }
+    header .view-content .views-field.views-field-field-social-links .field-content a {
+      font-size: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
+
+@media (min-width: 768px) {
+  header .block-menu .menu.menu--level-1 {
+    display: flex;
+    list-style: none; }
+    header .block-menu .menu.menu--level-1 li {
+      margin-right: 10px;
+      color: #000000;
+      font-size: 11px;
+      cursor: pointer; }
+    header .block-menu .menu.menu--level-1 li a {
+      color: #000000;
+      text-decoration: none; } }
+
+@media (min-width: 768px) {
+  header .block-views-blocksocial-network-block-1 {
+    margin-left: auto;
+    margin-bottom: 0; } }
+
+header .region.region--header-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0; }
+  @media (min-width: 768px) {
+    header .region.region--header-2 {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      height: 140px; }
+      header .region.region--header-2 .site-branding {
+        background-image: none;
+        min-height: auto;
+        flex-shrink: 0; }
+      header .region.region--header-2 .ad_header,
+      header .region.region--header-2 .block-system {
+        margin: 0; }
+      header .region.region--header-2 .ad_header {
+        width: 100%; }
+        header .region.region--header-2 .ad_header div > div > div > div.field__item > img {
+          max-width: 768px;
+          width: 100%; } }
+
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
+  \*************************************************************************************************************/
+

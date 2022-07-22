@@ -18,12 +18,22 @@
  */
 #}
 
-    {% if page.header or page.primary_menu %}
+    {% if page.header1 or page.primary_menu %}
 
       <header class="header">
 
           <div class="container">
-            {{ page.header }}
+
+            <div class="header__inner">
+              <div class="header__box-1">
+                {{ page.header_1 }}
+              </div>
+              <div class="header__box-2">
+                {{ page.header_2 }}
+              </div>
+
+            </div>
+
             {% if page.primary_menu %}
 
               <div class="mobile-buttons" data-drupal-selector="mobile-buttons">

@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_weather
 theme: new_blog
-region: header
-weight: -8
+region: header_1
+weight: -16
 provider: null
 plugin: 'block_content:b9c2432e-8b30-494b-8b90-fb31f829094f'
 settings:

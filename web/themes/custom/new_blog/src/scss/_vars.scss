@@ -1,7 +1,7 @@
 $grey: #9b9b9b;
 $blue: #3c6b97;
 $grey97: #f7f7f7;
-
+$breackpoint_md: 768px;
 
 //@mixin OpenSans-300 {
 //  font-family: 'OpenSans',
@@ -11,11 +11,8 @@ $grey97: #f7f7f7;
 
 
 
-
-
-
-@mixin _1660 {
-  @media (max-width: 1660px) {
+@mixin _breackpoint_md {
+  @media (min-width: $breackpoint_md) {
     @content;
   }
 }
