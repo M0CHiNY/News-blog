@@ -1,12 +1,14 @@
 html,
 body{
+  background-image: none;
   background-color: #FFFFFF;
+
 }
 .container {
+  max-width: 1164px !important;
   width: 100%;
-  max-width: 1164px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px !important;
   position: relative;
 }
 

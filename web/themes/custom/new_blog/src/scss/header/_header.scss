@@ -1,126 +1,130 @@
+@import "../_vars";
+@import "../_global";
+
 header {
-  min-height: 234px;
-
   .header__inner {
+    display: none;
+    @include _breackpoint_md {
+      display: block;
+      margin: 20px 0;
+      .header__box-1 {
+        background-color: #F4F4F4;
 
-    .header__box-1 {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      background-color: #F4F4F4;
-      padding-left: 20px;
-      padding-right: 20px;
+        .region.region--header-1 {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
 
-      .region.region--header-1 {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        gap:20px;
-        #block-new-blog-weather,
-        #block-new-blog-date,
-        .menu--top-menu{
-          margin-bottom: 0;
-        }
 
-        .field--name-field-date{
-          font-size: 11px;
-          color: #000000;
+          #block-new-blog-weather,
+          #block-new-blog-date,
+          .menu--top-menu {
+            margin-bottom: 0;
+          }
+
+          .field--name-field-date {
+            font-size: 11px;
+            color: #000000;
+          }
         }
       }
     }
+  }
 
+  .mobile-buttons {
+    margin-top: 0;
   }
 
   .view-content {
-    display: flex;
-
-    .views-row{
-      position: relative;
-      margin-left: 10px;
-    }
-
-    .views-field.views-field-field-images {
-      .field-content img {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    .views-field.views-field-field-social-links{
-
-      .field-content a {
-        font-size: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      }
-    }
-
-  }
-
-  .block-menu{
-
-    .menu.menu--level-1{
+    @include _breackpoint_md {
       display: flex;
-      list-style: none;
 
-      & li {
-        margin-right: 10px;
-        color: #000000;
-        font-size: 11px;
-        cursor:pointer;
+      .views-row {
+        position: relative;
+        margin-left: 10px;
       }
 
-      & li a{
-        color: #000000;
-        text-decoration: none;
-      }
-    }
-  }
-
-  .block-views-blocksocial-network-block-1{
-    margin-left: auto;
-    margin-bottom: 0;
-  }
-
-  .region.region--header-2{
-    background-color: #ffffff;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    height: 140px;
-
-    .block-system-branding-block{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 141px;
-      & a {
-        width: 272px;
+      .views-field.views-field-field-images {
+        .field-content img {
+          width: 20px;
+          height: 20px;
+        }
       }
 
+      .views-field.views-field-field-social-links {
 
-
-    }
-    .site-branding{
-      margin: 0;
-      background-image: none;
-
-      .site-branding__inner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .site-branding__logo{
-          width: 273px;
-
+        .field-content a {
+          font-size: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
         }
       }
     }
   }
-  .ad_header{
-    margin: 0;
 
+  .block-menu {
+    @include _breackpoint_md {
 
+      .menu.menu--level-1 {
+        display: flex;
+        list-style: none;
+
+        & li {
+          margin-right: 10px;
+          color: #000000;
+          font-size: 11px;
+          cursor: pointer;
+        }
+
+        & li a {
+          color: #000000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .block-views-blocksocial-network-block-1 {
+    @include _breackpoint_md {
+      margin-left: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .region.region--header-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    @include _breackpoint_md {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      height: 140px;
+      .site-branding {
+        background-image: none;
+        min-height: auto;
+        flex-shrink: 0;
+      }
+
+      .ad_header,
+      .block-system {
+        margin: 0;
+      }
+      .ad_header {
+        width: 100%;
+         div > div > div > div.field__item > img {
+           max-width: 768px;
+           width: 100%;
+         }
+      }
+    }
   }
 }
+
