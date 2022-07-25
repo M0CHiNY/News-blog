@@ -1,33 +1,39 @@
-@import "../_vars";
 @import "../_global";
 
-header {
+
+.header {
+
   .header__inner {
     display: none;
     @include _breackpoint_md {
       display: block;
-      margin: 20px 0;
-      .header__box-1 {
-        background-color: #F4F4F4;
 
-        .region.region--header-1 {
-          display: flex;
-          align-items: center;
-          width: 100%;
-          gap: 20px;
-          padding-left: 20px;
-          padding-right: 20px;
+      @include _breackpoint_md {
+        display: block;
 
 
-          #block-new-blog-weather,
-          #block-new-blog-date,
-          .menu--top-menu {
-            margin-bottom: 0;
-          }
+        .header__box-1 {
+          background-color: #F4F4F4;
 
-          .field--name-field-date {
-            font-size: 11px;
-            color: #000000;
+          .region.region--header-1 {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+
+            #block-new-blog-weather,
+            #block-new-blog-date,
+            .menu--top-menu {
+              margin-bottom: 0;
+            }
+
+            .field--name-field-date {
+              font-size: 11px;
+              color: #000000;
+            }
           }
         }
       }
@@ -119,10 +125,11 @@ header {
       }
       .ad_header {
         width: 100%;
-         div > div > div > div.field__item > img {
-           max-width: 768px;
-           width: 100%;
-         }
+
+        div > div > div > div.field__item > img {
+          max-width: 768px;
+          width: 100%;
+        }
       }
     }
   }

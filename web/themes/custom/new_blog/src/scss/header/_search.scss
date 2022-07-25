@@ -1,0 +1,21 @@
+@import "../_global";
+
+.header .container {
+  .search-block-form {
+    margin-bottom: 0;
+    background-color: transparent;
+    @include _breackpoint_1200{
+    display: block;
+    }
+
+    .content .search-block-form .form-item-keys {
+
+      & input {
+        font-size: 0;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+}
+

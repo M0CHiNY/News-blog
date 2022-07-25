@@ -1,6 +1,6 @@
 uuid: 3473d57c-9e66-48e4-8418-a199638cf7c9
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.popular_articles_block
@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__popular_articles_block_block_1
 theme: new_blog
-region: header_1
-weight: -9
+region: hero
+weight: -14
 provider: null
 plugin: 'views_block:popular_articles_block-block_1'
 settings:

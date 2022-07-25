@@ -1,22 +1,39 @@
-/*!**************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_vars.scss ***!
-  \**************************************************************************************************************/
-
-/*!****************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_global.scss ***!
-  \****************************************************************************************************************/
-html,
-body {
-  background-image: none;
-  background-color: #FFFFFF; }
-
-.container {
-  max-width: 1164px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-  position: relative; }
-
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_header.scss ***!
+  \***********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap);
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_header.scss (1) ***!
+  \***************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_header.scss (2) ***!
+  \***************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap);
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_menu.scss ***!
+  \*********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap);
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_menu.scss (1) ***!
+  \*************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_menu.scss (2) ***!
+  \*************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap);
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_search.scss ***!
+  \***********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap);
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_search.scss (1) ***!
+  \***************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_search.scss (2) ***!
+  \***************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap);
 /*!**************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/_libs.scss ***!
   \**************************************************************************************************************/
@@ -51,57 +68,58 @@ div.wrapper > main > section.breadcrumb > div > div {
   .footer .region.region--breadcrumb.grid-full.layout--pass--content-medium.ie11-autorow {
     display: flex; }
 
-/*!***********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_header.scss ***!
-  \***********************************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_header.scss (3) ***!
+  \***************************************************************************************************************************/
 html,
 body {
   background-image: none;
   background-color: #FFFFFF; }
 
-.container {
+.header > .container {
   max-width: 1164px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
-  position: relative; }
+  padding: 0; }
 
-header .header__inner {
+.header .header__inner {
   display: none; }
   @media (min-width: 768px) {
-    header .header__inner {
-      display: block;
-      margin: 20px 0; }
-      header .header__inner .header__box-1 {
+    .header .header__inner {
+      display: block; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .header .header__inner {
+      display: block; }
+      .header .header__inner .header__box-1 {
         background-color: #F4F4F4; }
-        header .header__inner .header__box-1 .region.region--header-1 {
+        .header .header__inner .header__box-1 .region.region--header-1 {
           display: flex;
           align-items: center;
           width: 100%;
           gap: 20px;
           padding-left: 20px;
           padding-right: 20px; }
-          header .header__inner .header__box-1 .region.region--header-1 #block-new-blog-weather,
-          header .header__inner .header__box-1 .region.region--header-1 #block-new-blog-date,
-          header .header__inner .header__box-1 .region.region--header-1 .menu--top-menu {
+          .header .header__inner .header__box-1 .region.region--header-1 #block-new-blog-weather,
+          .header .header__inner .header__box-1 .region.region--header-1 #block-new-blog-date,
+          .header .header__inner .header__box-1 .region.region--header-1 .menu--top-menu {
             margin-bottom: 0; }
-          header .header__inner .header__box-1 .region.region--header-1 .field--name-field-date {
+          .header .header__inner .header__box-1 .region.region--header-1 .field--name-field-date {
             font-size: 11px;
             color: #000000; } }
 
-header .mobile-buttons {
+.header .mobile-buttons {
   margin-top: 0; }
 
 @media (min-width: 768px) {
-  header .view-content {
+  .header .view-content {
     display: flex; }
-    header .view-content .views-row {
+    .header .view-content .views-row {
       position: relative;
       margin-left: 10px; }
-    header .view-content .views-field.views-field-field-images .field-content img {
+    .header .view-content .views-field.views-field-field-images .field-content img {
       width: 20px;
       height: 20px; }
-    header .view-content .views-field.views-field-field-social-links .field-content a {
+    .header .view-content .views-field.views-field-field-social-links .field-content a {
       font-size: 0;
       position: absolute;
       top: 0;
@@ -110,45 +128,270 @@ header .mobile-buttons {
       bottom: 0; } }
 
 @media (min-width: 768px) {
-  header .block-menu .menu.menu--level-1 {
+  .header .block-menu .menu.menu--level-1 {
     display: flex;
     list-style: none; }
-    header .block-menu .menu.menu--level-1 li {
+    .header .block-menu .menu.menu--level-1 li {
       margin-right: 10px;
       color: #000000;
       font-size: 11px;
       cursor: pointer; }
-    header .block-menu .menu.menu--level-1 li a {
+    .header .block-menu .menu.menu--level-1 li a {
       color: #000000;
       text-decoration: none; } }
 
 @media (min-width: 768px) {
-  header .block-views-blocksocial-network-block-1 {
+  .header .block-views-blocksocial-network-block-1 {
     margin-left: auto;
     margin-bottom: 0; } }
 
-header .region.region--header-2 {
+.header .region.region--header-2 {
   display: flex;
   justify-content: space-between;
   flex-shrink: 0; }
   @media (min-width: 768px) {
-    header .region.region--header-2 {
+    .header .region.region--header-2 {
       padding: 20px 0;
       display: flex;
       align-items: center;
       height: 140px; }
-      header .region.region--header-2 .site-branding {
+      .header .region.region--header-2 .site-branding {
         background-image: none;
         min-height: auto;
         flex-shrink: 0; }
-      header .region.region--header-2 .ad_header,
-      header .region.region--header-2 .block-system {
+      .header .region.region--header-2 .ad_header,
+      .header .region.region--header-2 .block-system {
         margin: 0; }
-      header .region.region--header-2 .ad_header {
+      .header .region.region--header-2 .ad_header {
         width: 100%; }
-        header .region.region--header-2 .ad_header div > div > div > div.field__item > img {
+        .header .region.region--header-2 .ad_header div > div > div > div.field__item > img {
           max-width: 768px;
           width: 100%; } }
+
+/*!*************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_menu.scss (3) ***!
+  \*************************************************************************************************************************/
+html,
+body {
+  background-image: none;
+  background-color: #FFFFFF; }
+
+.header > .container {
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.header .container .mobile-menu {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  z-index: 20;
+  top: 8px;
+  left: 8px; }
+  @media (min-width: 768px) {
+    .header .container .mobile-menu {
+      display: none; } }
+
+.header .mobile-menu__btn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative; }
+  .header .mobile-menu__btn .mobile-menu__btn-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.header .container .header-nav {
+  width: 100%;
+  padding-left: 0;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  visibility: visible;
+  top: 0;
+  margin-right: 0;
+  border: none;
+  max-width: 100%;
+  height: 54px; }
+  @media (min-width: 768px) {
+    .header .container .header-nav {
+      position: relative;
+      height: auto;
+      display: flex;
+      padding-bottom: 0; } }
+  .header .container .header-nav:after {
+    content: "";
+    position: absolute;
+    background-image: url(6487ec114a20705d91d3.jpg);
+    filter: brightness(43%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
+
+.header .primary-nav {
+  padding-top: 80px;
+  left: 0;
+  position: fixed;
+  padding-left: 0;
+  visibility: visible;
+  max-width: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 0;
+  z-index: 500;
+  transform: translateX(-500%); }
+  .header .primary-nav.btn-active {
+    transform: translate(0); }
+  @media (min-width: 768px) {
+    .header .primary-nav {
+      position: relative;
+      background-color: transparent;
+      padding-top: 0;
+      transform: translate(0); } }
+  .header .primary-nav:before {
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    background-image: url(f4bc3d8372b36ba964b3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    right: 15px;
+    top: 15px;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .header .primary-nav:before {
+        height: 0;
+        width: 0; } }
+  .header .primary-nav:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(a2495059e0adc3ee95f9.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(55%) contrast(110%);
+    z-index: -1; }
+    @media (min-width: 768px) {
+      .header .primary-nav:after {
+        background: transparent; } }
+  @media (min-width: 768px) {
+    .header .primary-nav .primary-nav__menu {
+      display: inline-flex;
+      align-items: center; } }
+  @media (min-width: 768px) {
+    .header .primary-nav .primary-nav__menu-item--has-children.primary-nav__menu-item--has-children {
+      flex-wrap: nowrap;
+      position: relative;
+      align-items: center; } }
+  .header .primary-nav li {
+    padding: 5px;
+    margin-bottom: 0;
+    padding-left: 40px; }
+    .header .primary-nav li .primary-nav__menu--level-2 {
+      border-left: 0;
+      margin-top: 0;
+      padding-left: 30px; }
+      @media (min-width: 768px) {
+        .header .primary-nav li .primary-nav__menu--level-2 {
+          display: block;
+          position: absolute;
+          border-top: none;
+          top: 50px;
+          font-size: 12px;
+          width: 194px;
+          padding: 0; } }
+      @media (min-width: 768px) {
+        .header .primary-nav li .primary-nav__menu--level-2 li:hover a span {
+          color: #00a392;
+          transition: all .3s; } }
+      .header .primary-nav li .primary-nav__menu--level-2 li a span {
+        font-size: 16px; }
+        @media (min-width: 768px) {
+          .header .primary-nav li .primary-nav__menu--level-2 li a span {
+            font-size: 12px;
+            color: black; } }
+  @media (min-width: 768px) {
+    .header .primary-nav li {
+      padding-left: 0; } }
+  .header .primary-nav li a {
+    font-size: 21px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-left: 20px; }
+  .header .primary-nav li .is-active span {
+    color: #00a392; }
+  .header .primary-nav li span {
+    font-size: 21px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.1; }
+    @media (min-width: 768px) {
+      .header .primary-nav li span {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px; } }
+  @media (min-width: 768px) {
+    .header .primary-nav li .primary-nav__button-toggle .icon--menu-toggle {
+      background-color: transparent; }
+      .header .primary-nav li .primary-nav__button-toggle .icon--menu-toggle:before {
+        top: 33%; }
+      .header .primary-nav li .primary-nav__button-toggle .icon--menu-toggle:after {
+        top: 37%; } }
+  .header .primary-nav span:before, .header .primary-nav span:after {
+    border-color: #ffffff; }
+
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_search.scss (3) ***!
+  \***************************************************************************************************************************/
+html,
+body {
+  background-image: none;
+  background-color: #FFFFFF; }
+
+.header > .container {
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.header .container .search-block-form {
+  margin-bottom: 0;
+  background-color: transparent; }
+  @media (min-width: 1200px) {
+    .header .container .search-block-form {
+      display: block; } }
+  .header .container .search-block-form .content .search-block-form .form-item-keys input {
+    font-size: 0;
+    width: 0;
+    height: 0; }
 
 /*!*************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
