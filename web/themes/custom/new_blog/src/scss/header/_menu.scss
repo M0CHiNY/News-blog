@@ -53,6 +53,7 @@
     border: none;
     max-width: 100%;
     height: 54px;
+    overflow: unset;
     @include _breackpoint_md {
       position: relative;
       height: auto;
@@ -96,9 +97,27 @@
     border-top: 0;
     z-index: 500;
     transform: translateX(-500%);
+    transition: all 1.5s;
 
     &.btn-active{
       transform: translate(0);
+      transition: all 1.5s;
+    }
+    & .close-button{
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 100;
+      background-image: url("../../img/icons/close.svg ");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @include _breackpoint_md{
+        display: none;
+      }
     }
     @include _breackpoint_md {
       position: relative;
@@ -106,24 +125,6 @@
       padding-top: 0;
       transform: translate(0);
 
-    }
-
-    &:before {
-      position: absolute;
-      content: "";
-      height: 45px;
-      width: 45px;
-      background-image: url("../../img/icons/close.svg ");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      right: 15px;
-      top: 15px;
-      cursor: pointer;
-      @include _breackpoint_md {
-        height: 0;
-        width: 0;
-      }
     }
 
     &:after {
@@ -145,6 +146,7 @@
     }
 
     .primary-nav__menu {
+      transition: all 0.3s;
       @include _breackpoint_md {
         display: inline-flex;
         align-items: center;
@@ -176,8 +178,15 @@
           font-size: 12px;
           width: 194px;
           padding: 0;
+          background-color: $white;
+          text-align: center;
+          box-shadow: 2px 2px 13px 2px #000000;
         }
-
+        & li a {
+          @include _breackpoint_md{
+            padding-left: 0;
+          }
+        }
         & li {
           @include _breackpoint_md {
             &:hover {
@@ -211,13 +220,18 @@
         @include roboto-700;
         line-height: 1.1;
         padding-left: 20px;
-
+       @include _breackpoint_md{
+         padding-left: 10px;
+         padding-right: 10px;
+       }
       }
     }
 
     & li .is-active {
+
       & span {
         color: $green;
+
       }
 
     }
@@ -232,6 +246,10 @@
         padding-top: 10px;
         padding-bottom: 10px;
       }
+      //&::after{
+      //  width: 0;
+      //  height: 0;
+      //}
     }
 
     & li .primary-nav__button-toggle .icon--menu-toggle {

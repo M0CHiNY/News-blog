@@ -92,7 +92,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
   \************************/
 /***/ (() => {
 
-eval("(function ($, Drupal) {\n  // I want some code to run on page load, so I use Drupal.behaviors\n  Drupal.behaviors.burger_menu = {\n    attach: function (context, settings) {\n      $(\".mobile-menu__btn\").click(\n        function () {\n          $(\".primary-nav\").addClass(\"btn-active\");\n        }\n      );\n      $(\"#td-icon-\").click(\n        function () {\n          $(\".primary-nav\").removeClass(\"btn-active\");\n        }\n      );\n    }\n  };\n}(jQuery, Drupal));\n\n\n//# sourceURL=webpack://light-webpack/./src/js/menu.js?");
+eval("(function ($, Drupal) {\n  // I want some code to run on page load, so I use Drupal.behaviors\n  Drupal.behaviors.burger_menu = {\n    attach: function (context, settings) {\n\n      let $button = $('<div class=\"close-button\"></div>').click(function () {\n\n        $(\".primary-nav\").removeClass(\"btn-active\");\n      })\n\n      $('.header-nav .block-menu', context).once('burger_menu').append($button);\n      $(\".mobile-menu__btn\").click(\n        function () {\n          $(\".primary-nav\").addClass(\"btn-active\");\n        }\n      );\n    }\n  };\n}(jQuery, Drupal));\n\n\n//# sourceURL=webpack://light-webpack/./src/js/menu.js?");
 
 /***/ })
 

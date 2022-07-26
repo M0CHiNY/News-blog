@@ -4,8 +4,8 @@
   .search-block-form {
     margin-bottom: 0;
     background-color: transparent;
-    @include _breackpoint_1200{
-    display: block;
+    @include _breackpoint_1200 {
+      display: block;
     }
 
     .content .search-block-form .form-item-keys {
@@ -14,6 +14,29 @@
         font-size: 0;
         width: 0;
         height: 0;
+
+        @include _breackpoint_1200 {
+          font-size: 0;
+          width: 0;
+          height: 0;
+          display: none;
+        }
+      }
+    }
+
+    .content .search-block-form .form-actions {
+      & .button--primary {
+        @include _breackpoint_md{
+          width: 40px;
+          height: 40px;
+          margin-top:10px;
+        }
+        @include  _breackpoint_1200{
+          margin-top: 5px;
+          margin-right: 20px;
+        }
+
+
       }
     }
   }
