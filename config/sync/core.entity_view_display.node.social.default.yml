@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.social.field_count_follower
+    - field.field.node.social.field_footer_socials
     - field.field.node.social.field_images
     - field.field.node.social.field_social_links
     - field.field.node.social.field_text
@@ -28,6 +29,16 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_footer_socials:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 108
     region: content
   field_images:
     type: image

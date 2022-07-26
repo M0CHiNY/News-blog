@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.social.field_count_follower
+    - field.field.node.social.field_footer_socials
     - field.field.node.social.field_images
     - field.field.node.social.field_social_links
     - field.field.node.social.field_text
@@ -24,6 +25,7 @@ content:
     region: content
 hidden:
   field_count_follower: true
+  field_footer_socials: true
   field_images: true
   field_social_links: true
   field_text: true

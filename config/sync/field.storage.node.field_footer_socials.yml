@@ -1,0 +1,18 @@
+uuid: 645f51cd-d8f6-4600-8db3-f6054ca3ac0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_footer_socials
+field_name: field_footer_socials
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

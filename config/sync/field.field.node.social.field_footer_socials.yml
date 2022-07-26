@@ -1,0 +1,23 @@
+uuid: d6b322a2-efef-4ba6-8f9b-08db767f78be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_footer_socials
+    - node.type.social
+id: node.social.field_footer_socials
+field_name: field_footer_socials
+entity_type: node
+bundle: social
+label: 'footer social'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
