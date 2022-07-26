@@ -22,6 +22,18 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_header.scss (2) ***!
   \***************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap);
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer/_footer.scss ***!
+  \***********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap);
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer/_footer.scss (1) ***!
+  \***************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer/_footer.scss (2) ***!
+  \***************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap);
 /*!*********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_menu.scss ***!
   \*********************************************************************************************************************/
@@ -190,6 +202,143 @@ body {
         .header .region.region--header-2 .ad_header div > div > div > div.field__item > img {
           max-width: 768px;
           width: 100%; } }
+
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/footer/_footer.scss (3) ***!
+  \***************************************************************************************************************************/
+html,
+body {
+  background-image: none;
+  background-color: #FFFFFF; }
+
+.header > .container {
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.footer > .container {
+  max-width: 1164px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.footer .footer__inner {
+  display: flex;
+  flex-direction: column; }
+  .footer .footer__inner .footer__box-1 {
+    padding: 60px 0;
+    background-image: url(6b3ea9d1a2806655c0de.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1; }
+    @media (min-width: 768px) {
+      .footer .footer__inner .footer__box-1 {
+        padding: 30px 0; } }
+    .footer .footer__inner .footer__box-1:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: black;
+      opacity: 0.7;
+      z-index: -1; }
+    .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .block-block-content .block__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .block-block-content .block__content .text-content {
+          color: #ffffff;
+          text-align: center;
+          font-family: 'Rubik', sans-serif;
+          font-weight: 400; }
+          .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .block-block-content .block__content .text-content p {
+            font-size: 13px;
+            line-height: 1.6;
+            max-width: 768px;
+            padding-left: 10px;
+            padding-right: 10px; }
+      .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .block-views-blockfooter-social-block-1 .view-footer-social {
+        margin-top: 20px; }
+        .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .block-views-blockfooter-social-block-1 .view-footer-social .view-content {
+          display: flex;
+          gap: 30px;
+          justify-content: center; }
+          .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .block-views-blockfooter-social-block-1 .view-footer-social .view-content .views-row {
+            width: 35px;
+            height: 35px;
+            background-color: rgba(255, 255, 255, 0.1);
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .block-views-blockfooter-social-block-1 .view-footer-social .view-content .views-row .views-field-field-social-links a {
+              position: absolute;
+              font-size: 0;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0; }
+            .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .block-views-blockfooter-social-block-1 .view-footer-social .view-content .views-row .views-field-field-images {
+              width: 15px;
+              height: 15px; }
+      .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .field--type-email {
+        display: flex;
+        color: #ffffff; }
+        .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .field--type-email .field__label {
+          font-size: 13px;
+          padding-right: 15px; }
+        .footer .footer__inner .footer__box-1 .layout--pass--content-medium .region--footer_top__inner .field--type-email .field__item {
+          color: #00a392;
+          font-size: 13px; }
+  .footer .footer__inner .footer__box-2 {
+    background-color: black;
+    color: #ffffff; }
+    .footer .footer__inner .footer__box-2 .region--footer-bottom {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center; }
+      @media (min-width: 768px) {
+        .footer .footer__inner .footer__box-2 .region--footer-bottom {
+          flex-direction: row; } }
+      .footer .footer__inner .footer__box-2 .region--footer-bottom .block-block-content {
+        margin-bottom: 0; }
+        .footer .footer__inner .footer__box-2 .region--footer-bottom .block-block-content .text-content {
+          color: #ffffff;
+          font-size: 13px;
+          padding-left: 30px;
+          text-align: center; }
+          @media (min-width: 768px) {
+            .footer .footer__inner .footer__box-2 .region--footer-bottom .block-block-content .text-content {
+              text-align: left; } }
+    .footer .footer__inner .footer__box-2 .menu--footer-menu {
+      margin-bottom: 0;
+      padding-right: 30px; }
+      .footer .footer__inner .footer__box-2 .menu--footer-menu .menu {
+        display: flex;
+        justify-content: center; }
+        @media (min-width: 768px) {
+          .footer .footer__inner .footer__box-2 .menu--footer-menu .menu {
+            justify-content: right; } }
+        .footer .footer__inner .footer__box-2 .menu--footer-menu .menu li:not(:last-child) {
+          padding-right: 15px; }
+        .footer .footer__inner .footer__box-2 .menu--footer-menu .menu li {
+          font-size: 13px;
+          list-style: none; }
+          .footer .footer__inner .footer__box-2 .menu--footer-menu .menu li a {
+            font-size: 13px;
+            color: #ffffff;
+            text-decoration: none; }
 
 /*!*************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/header/_menu.scss (3) ***!
