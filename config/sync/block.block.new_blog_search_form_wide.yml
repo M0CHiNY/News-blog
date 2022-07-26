@@ -11,7 +11,7 @@ _core:
 id: new_blog_search_form_wide
 theme: new_blog
 region: primary_menu
-weight: -5
+weight: -13
 provider: null
 plugin: search_form_block
 settings:

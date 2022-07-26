@@ -1,6 +1,6 @@
 uuid: 4b97a4c0-a45e-45ac-bc14-f8700755e543
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:footer_info:8a4b6483-1e43-45bf-bd54-7c1d566bfc7a'

@@ -1,6 +1,6 @@
 uuid: 9768f11b-c49a-487a-9a69-073a8b44335f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.gaming
@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__gaming_block_1
 theme: new_blog
-region: header_1
-weight: -7
+region: hero
+weight: -13
 provider: null
 plugin: 'views_block:gaming-block_1'
 settings:

@@ -1,0 +1,31 @@
+//google fonts
+@mixin rubik-400{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+@mixin rubik-500{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+@mixin roboto-700{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+@mixin OpenSans-700{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+//screen media query
+@mixin _breackpoint_md {
+  @media (min-width: $breackpoint_md) {
+    @content;
+  }
+}
+
+@mixin _breackpoint_1200 {
+  @media (min-width: $breackpoint_1200) {
+    @content;
+  }
+}

@@ -1,6 +1,6 @@
 uuid: abcc404d-be1e-4cb9-a8fa-066ea5b4b8cb
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.trending_now
@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__trending_now_block_1
 theme: new_blog
-region: header_1
-weight: -10
+region: hero
+weight: -15
 provider: null
 plugin: 'views_block:trending_now-block_1'
 settings:

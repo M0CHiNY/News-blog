@@ -13,7 +13,7 @@ _core:
 id: new_blog_main_menu
 theme: new_blog
 region: primary_menu
-weight: -6
+weight: -15
 provider: null
 plugin: 'system_menu_block:main'
 settings:

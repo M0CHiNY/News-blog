@@ -1,6 +1,6 @@
 uuid: d70644cf-1a59-4739-8806-518f8a20013e
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.fitness
@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__fitness_block_1
 theme: new_blog
-region: header_1
-weight: -8
+region: hero
+weight: -12
 provider: null
 plugin: 'views_block:fitness-block_1'
 settings:
