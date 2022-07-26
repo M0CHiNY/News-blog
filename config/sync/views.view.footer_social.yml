@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_images
     - field.storage.node.field_social_links
-    - image.style.footer_social_40x40_
+    - image.style.social
     - node.type.social
   module:
     - image
@@ -108,7 +108,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
+            make_link: true
             path: ''
             absolute: false
             external: false
@@ -148,7 +148,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: footer_social_40x40_
+            image_style: social
             image_loading:
               attribute: lazy
           group_column: ''
@@ -228,10 +228,10 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-        field_footer_social_value:
-          id: field_footer_social_value
-          table: node__field_footer_social
-          field: field_footer_social_value
+        field_footer_socials_value:
+          id: field_footer_socials_value
+          table: node__field_footer_socials
+          field: field_footer_socials_value
           relationship: none
           group_type: group
           admin_label: ''

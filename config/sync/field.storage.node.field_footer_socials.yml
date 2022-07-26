@@ -1,11 +1,11 @@
-uuid: 7f1b5fb0-777f-42ac-ae78-7abea832f6cd
+uuid: 645f51cd-d8f6-4600-8db3-f6054ca3ac0a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_footer_social
-field_name: field_footer_social
+id: node.field_footer_socials
+field_name: field_footer_socials
 entity_type: node
 type: boolean
 settings: {  }
