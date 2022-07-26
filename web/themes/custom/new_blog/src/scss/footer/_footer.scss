@@ -1,0 +1,181 @@
+@import "../_global";
+
+.footer {
+  > .container {
+    max-width: 1164px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+
+    .footer__box-1 {
+      padding: 60px 0;
+      background-image: url("../../img/footer.jpg");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+      @include _breackpoint_md{
+        padding: 30px 0;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        opacity: 0.7;
+        z-index: -1;
+      }
+
+      .layout--pass--content-medium .region--footer_top__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .block-block-content {
+          //logo and text
+          .block__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .text-content {
+              color: $white;
+              text-align: center;
+              @include rubik-400;
+
+              p {
+                font-size: 13px;
+                line-height: 1.6;
+                max-width: 768px;
+                padding-left: 10px;
+                padding-right: 10px;
+              }
+            }
+
+          }
+        }
+
+        .block-views-blockfooter-social-block-1 .view-footer-social {
+          margin-top:20px;
+          .view-content {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+
+            .views-row {
+              width: 35px;
+              height: 35px;
+              background-color: rgba($white, 0.1);
+              position: relative;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .views-field-field-social-links a {
+                position: absolute;
+                font-size: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+              }
+
+              .views-field-field-images {
+                width: 15px;
+                height: 15px;
+              }
+            }
+
+          }
+        }
+
+        .field--type-email {
+          display: flex;
+          color: $white;
+
+          .field__label {
+            font-size: 13px;
+            padding-right: 15px;
+          }
+
+          .field__item {
+            color: $green;
+            font-size: 13px;
+          }
+        }
+
+      }
+
+    }
+
+    .footer__box-2 {
+      background-color: black;
+      color: $white;
+
+
+      .region--footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        //justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        @include _breackpoint_md{
+          flex-direction: row;
+        }
+
+
+        .block-block-content {
+          margin-bottom: 0;
+
+          .text-content {
+            color: $white;
+            font-size: 13px;
+            padding-left: 30px;
+            text-align: center;
+            @include _breackpoint_md{
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .menu--footer-menu {
+        margin-bottom: 0;
+        padding-right: 30px;
+
+        .menu {
+          display: flex;
+          justify-content: center;
+          @include _breackpoint_md{
+            justify-content: right;
+          }
+          li:not(:last-child){
+            padding-right: 15px;
+          }
+          li {
+            font-size: 13px;
+            list-style: none;
+
+            a {
+              font-size: 13px;
+              color: $white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

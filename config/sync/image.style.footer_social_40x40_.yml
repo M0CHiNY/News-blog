@@ -1,0 +1,15 @@
+uuid: 75bbe3a0-a4d0-44dd-ab2a-c866fe454c30
+langcode: en
+status: true
+dependencies: {  }
+name: footer_social_40x40_
+label: 'footer social( 40x40)'
+effects:
+  7efab9b5-abdb-4797-af56-c38a459564ae:
+    uuid: 7efab9b5-abdb-4797-af56-c38a459564ae
+    id: image_scale
+    weight: 1
+    data:
+      width: 40
+      height: 40
+      upscale: false

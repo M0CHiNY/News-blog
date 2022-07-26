@@ -1,6 +1,6 @@
 uuid: ca3d0554-6fe5-4fa6-8ddc-a9c3874f9542
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.footer_social

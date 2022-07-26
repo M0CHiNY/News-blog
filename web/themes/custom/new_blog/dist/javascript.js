@@ -20,6 +20,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/scss/footer/_footer.scss":
+/*!**************************************!*\
+  !*** ./src/scss/footer/_footer.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://light-webpack/./src/scss/footer/_footer.scss?");
+
+/***/ }),
+
 /***/ "./src/scss/header/_header.scss":
 /*!**************************************!*\
   !*** ./src/scss/header/_header.scss ***!
@@ -82,7 +93,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_libs_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/_libs.scss */ \"./src/scss/_libs.scss\");\n/* harmony import */ var _scss_regions_regions_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/regions/_regions.scss */ \"./src/scss/regions/_regions.scss\");\n/* harmony import */ var _scss_header_header_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/header/_header.scss */ \"./src/scss/header/_header.scss\");\n/* harmony import */ var _scss_header_menu_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/header/_menu.scss */ \"./src/scss/header/_menu.scss\");\n/* harmony import */ var _scss_header_search_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scss/header/_search.scss */ \"./src/scss/header/_search.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _js_menu_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/menu.js */ \"./src/js/menu.js\");\n/* harmony import */ var _js_menu_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_menu_js__WEBPACK_IMPORTED_MODULE_6__);\n/*\nscss\n */\n\n\n\n\n\n\n\n\n\n\n// js\n\n\n\n\n\n\n\n//# sourceURL=webpack://light-webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_libs_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/_libs.scss */ \"./src/scss/_libs.scss\");\n/* harmony import */ var _scss_regions_regions_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/regions/_regions.scss */ \"./src/scss/regions/_regions.scss\");\n/* harmony import */ var _scss_header_header_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/header/_header.scss */ \"./src/scss/header/_header.scss\");\n/* harmony import */ var _scss_footer_footer_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/footer/_footer.scss */ \"./src/scss/footer/_footer.scss\");\n/* harmony import */ var _scss_header_menu_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scss/header/_menu.scss */ \"./src/scss/header/_menu.scss\");\n/* harmony import */ var _scss_header_search_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./scss/header/_search.scss */ \"./src/scss/header/_search.scss\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _js_menu_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/menu.js */ \"./src/js/menu.js\");\n/* harmony import */ var _js_menu_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_js_menu_js__WEBPACK_IMPORTED_MODULE_7__);\n/*\nscss\n */\n\n\n\n\n\n\n\n\n\n\n\n// js\n\n\n\n\n\n\n\n//# sourceURL=webpack://light-webpack/./src/index.js?");
 
 /***/ }),
 
