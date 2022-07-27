@@ -1,0 +1,196 @@
+@import "../_global";
+
+.section-1 {
+  margin-top: 55px;
+  @include _breackpoint_md{
+    margin-top:10px;
+  }
+
+  > .container {
+    max-width: 1116px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    @include _breackpoint_md {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+
+    .region--hero {
+
+      .view-popular-articles-block {
+        @include _breackpoint_md {
+          display: flex;
+        }
+
+
+        .view-content {
+          margin-bottom: 0;
+
+
+
+          .views-view-grid {
+            display: block;
+
+
+
+            .views-view-grid__item {
+              margin-right: 0;
+              margin-bottom: 4px;
+              cursor: pointer;
+              transition: 3s filter linear, 1s -webkit-filter linear;
+              &:hover{
+                img {
+                  filter: contrast(100%);
+                  transition: 3s filter linear, 1s -webkit-filter linear;
+                }
+              }
+            }
+          }
+
+          .popular__bg {
+            position: relative;
+            @include _breackpoint_md {
+              margin-right: 5px;
+            }
+
+            img {
+              width: 100%;
+              height: 260px;
+              object-fit: cover;
+              filter: brightness(63%);
+              @include _breackpoint_md {
+                height: calc(263px + (445 - 263) * ((100vw - 768px) / (1164 - 768));
+                max-width: 531px;
+              }
+              @include -breackpoint_1200{
+                height: 445px;
+              }
+            }
+
+            .popular-wrap {
+              position: absolute;
+              z-index: 1;
+              bottom: 0;
+              padding: 20px;
+
+              .popular__content {
+                color: $white;
+                display: flex;
+                flex-direction: column;
+
+                .content__tags a {
+                  color: $white;
+                  font-size: 15px;
+                  @include rubik-400;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                }
+
+                .content__title a {
+                  color: $white;
+                  font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1164 - 320)));
+                  @include rubik-400;
+                  line-height: 1.2;
+                  text-decoration: none;
+                }
+              }
+
+              .popular-author {
+                color: $white;
+                font-size: 15px;
+                @include rubik-400;
+
+                a {
+                  color: $white;
+                  font-size: 15px;
+                  text-decoration: none;
+                  @include rubik-400;
+                }
+              }
+            }
+          }
+        }
+
+        .attachment-after {
+          overflow: hidden;
+          overflow-x: scroll;
+          @include -breackpoint_md{
+            overflow-x:unset;
+          }
+
+          .views-view-grid {
+            display: flex;
+            flex-wrap: nowrap;
+            @include _breackpoint_md {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-template-rows: repeat(2, 1fr);
+              grid-column-gap: 5px;
+            }
+          }
+
+          .popular__bg-attachment {
+            position: relative;
+
+            & img {
+              max-width: 619px;
+              width: 100%;
+              height: 165px;
+              object-fit: cover;
+              filter: brightness(63%);
+              @include _breackpoint_md {
+                //width: unset;
+                max-width: 263px;
+                height: calc(130px + (220 - 130) * ((100vw - 768px) / (1164 - 768));
+              }
+              @include -breackpoint_1200{
+                height: 220px;
+              }
+            }
+
+            .popular-wrap {
+              position: absolute;
+              bottom: 0;
+              padding: 20px;
+              padding-bottom: 10px;
+
+              .popular__content {
+                .content__tags a{
+                  display: none;
+                  font-size: 13px;
+                  @include _breackpoint_md {
+                    display: block;
+                    @include rubik-400;
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                  }
+                }
+
+                .content__title {
+                  line-height: 1.1;
+
+                  a {
+                    font-size: 17px;
+                    @include rubik-400;
+                    color: $white;
+                    text-decoration: none;
+                    @include rubik-400;
+                    @include _breackpoint_md {
+                      font-size: calc(13px + (18 - 13) * ((100vw - 768px) / (1920 - 768));
+
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

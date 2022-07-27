@@ -18,41 +18,41 @@
  */
 #}
 
-    {% if page.header1 or page.primary_menu %}
+{% if page.header1 or page.primary_menu %}
 
-      <header class="header">
+  <header class="header">
 
-          <div class="container">
+    <div class="container">
 
-            <div class="header__inner">
-              <div class="header__box-1">
-                {{ page.header_1 }}
-              </div>
-              <div class="header__box-2">
-                {{ page.header_2 }}
-              </div>
-
-            </div>
-
-            {% if page.primary_menu %}
-
-              <div class="mobile-menu" data-drupal-selector="mobile-buttons">
-                <button class="mobile-menu__btn">
-                  <span class="mobile-menu__btn-icon"></span>
-                </button>
-              </div>
-
-              <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
-                {{ page.primary_menu }}
-              </div>
-
-            {% endif %}
-
-          </div>
+      <div class="header__inner">
+        <div class="header__box-1">
+          {{ page.header_1 }}
         </div>
-      </header>
+        <div class="header__box-2">
+          {{ page.header_2 }}
+        </div>
 
-    {% endif %}
+      </div>
+
+      {% if page.primary_menu %}
+
+        <div class="mobile-menu" data-drupal-selector="mobile-buttons">
+          <button class="mobile-menu__btn">
+            <span class="mobile-menu__btn-icon"></span>
+          </button>
+        </div>
+
+        <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
+          {{ page.primary_menu }}
+        </div>
+
+      {% endif %}
+
+    </div>
+    </div>
+  </header>
+
+{% endif %}
 
 
 <div class="wrapper">
@@ -104,20 +104,20 @@
     {% endif %}
 
     {% if page.content_center %}
-    <section class="section-4">
-      <div class="container">
-        <div class="inner__box">
-          <div class="content__inner">
-            {{ page.content_center }}
-          </div>
-          {% if page.block_two %}
-            <div class="block-one__inner">
-              {{ page.block_two }}
+      <section class="section-4">
+        <div class="container">
+          <div class="inner__box">
+            <div class="content__inner">
+              {{ page.content_center }}
             </div>
-          {% endif %}
+            {% if page.block_two %}
+              <div class="block-one__inner">
+                {{ page.block_two }}
+              </div>
+            {% endif %}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     {% endif %}
 
     {% if page.hero_3 %}
@@ -131,20 +131,20 @@
     {% endif %}
 
     {% if page.content_bottom %}
-    <section class="section-6">
-      <div class="container">
-        <div class="inner__box">
-          <div class="content__inner">
-            {{ page.content_bottom }}
-          </div>
-          {% if page.block_three %}
-            <div class="block-one__inner">
-              {{ page.block_three }}
+      <section class="section-6">
+        <div class="container">
+          <div class="inner__box">
+            <div class="content__inner">
+              {{ page.content_bottom }}
             </div>
-          {% endif %}
+            {% if page.block_three %}
+              <div class="block-one__inner">
+                {{ page.block_three }}
+              </div>
+            {% endif %}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     {% endif %}
 
   </main>
@@ -154,9 +154,9 @@
   <div class="container">
     <div class="footer__inner">
       {% if page.footer_top %}
-      <div class="footer__box-1">
-        {{ page.footer_top }}
-      </div>
+        <div class="footer__box-1">
+          {{ page.footer_top }}
+        </div>
       {% endif %}
       <div class="footer__box-2">
         {{ page.footer_bottom }}
@@ -164,3 +164,5 @@
     </div>
   </div>
 </footer>
+
+

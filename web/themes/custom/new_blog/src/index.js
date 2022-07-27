@@ -9,6 +9,7 @@ import './scss/header/_header.scss';
 import './scss/footer/_footer.scss';
 import './scss/header/_menu.scss';
 import './scss/header/_search.scss';
+import './scss/front-page/popular-article.scss';
 import './scss/main.scss';
 
 

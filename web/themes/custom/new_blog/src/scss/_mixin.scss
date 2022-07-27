@@ -17,6 +17,16 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
+//global container
+@mixin container-content {
+  min-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
 //screen media query
 @mixin _breackpoint_md {
   @media (min-width: $breackpoint_md) {
@@ -29,3 +39,7 @@
     @content;
   }
 }
+//font size
+
+
+
