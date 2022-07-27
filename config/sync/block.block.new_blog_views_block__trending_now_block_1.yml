@@ -1,6 +1,6 @@
 uuid: abcc404d-be1e-4cb9-a8fa-066ea5b4b8cb
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.trending_now

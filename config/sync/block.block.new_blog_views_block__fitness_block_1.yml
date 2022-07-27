@@ -1,6 +1,6 @@
 uuid: d70644cf-1a59-4739-8806-518f8a20013e
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.fitness
