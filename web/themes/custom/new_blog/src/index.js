@@ -12,6 +12,7 @@ import './scss/header/_menu.scss';
 import './scss/header/_search.scss';
 import './scss/front-page/popular-article.scss';
 import './scss/front-page/globals.scss';
+import './scss/front-page/social-main.scss';
 import './scss/main.scss';
 
 

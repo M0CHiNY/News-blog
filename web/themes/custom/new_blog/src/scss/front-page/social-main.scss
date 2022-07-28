@@ -1,0 +1,92 @@
+@import "globals";
+
+.block-views-blocksocial-block-block-1 {
+  display: none;
+  @include _breackpoint_860 {
+    display: block;
+    .view-content {
+
+      .views-view-grid {
+        display: flex;
+        justify-content: space-between;
+
+
+
+        .views-view-grid__item {
+          max-width: 94px;
+          width: 100%;
+          position: relative;
+          flex-basis: unset;
+          margin-right: 0;
+          &:nth-child(1):hover{
+            .views-field-field-count-follower{
+              color:#1877F2;
+              opacity: 0.8;
+            }
+            .views-field-field-text{
+              opacity: 0.8;
+            }
+          }
+          &:nth-child(2):hover{
+            .views-field-field-count-follower{
+              color:#1DA1F2;
+              opacity: 0.8;
+            }
+            .views-field-field-text{
+              opacity: 0.8;
+            }
+          }
+          &:nth-child(3):hover{
+            .views-field-field-count-follower{
+              color:red;
+              opacity: 0.8;
+            }
+            .views-field-field-text{
+              opacity: 0.8;
+            }
+          }
+          &:nth-child(2n){
+            margin-right: 0;
+          }
+
+          .views-field-field-social-links a {
+            position: absolute;
+            font-size: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+          }
+
+          .views-view-grid__item-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ededed;
+
+            padding: 5px;
+          }
+
+          .views-field-field-images {
+            margin-bottom: 5px;
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          .views-field-field-count-follower {
+            font-size: 16px;
+            @include rubik-500;
+          }
+
+          .views-field-field-text {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
