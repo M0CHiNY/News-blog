@@ -1,6 +1,6 @@
 uuid: f59b6e11-be6a-4791-afe2-06fe365965ae
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.social_block
@@ -10,8 +10,8 @@ dependencies:
     - new_blog
 id: new_blog_views_block__social_block_block_1
 theme: new_blog
-region: header_1
-weight: -10
+region: block_one
+weight: -15
 provider: null
 plugin: 'views_block:social_block-block_1'
 settings:

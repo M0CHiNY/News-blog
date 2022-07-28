@@ -9,7 +9,7 @@ _core:
 id: new_blog_primary_local_tasks
 theme: new_blog
 region: header_1
-weight: -3
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:
