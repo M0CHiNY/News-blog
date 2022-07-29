@@ -5,10 +5,10 @@ dependencies: {  }
 name: advertisement_size_750_900_
 label: 'fashion size (750×900)'
 effects:
-  c152b4a5-b706-46f7-8df3-c7e0c429d80b:
-    uuid: c152b4a5-b706-46f7-8df3-c7e0c429d80b
-    id: image_crop
-    weight: 1
+  d78d1672-6108-4e21-a05c-0d3904252eb2:
+    uuid: d78d1672-6108-4e21-a05c-0d3904252eb2
+    id: image_scale_and_crop
+    weight: 2
     data:
       width: 750
       height: 900

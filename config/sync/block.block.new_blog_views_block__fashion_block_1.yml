@@ -1,6 +1,6 @@
 uuid: 4a80554c-9823-431a-a702-e69459206c9f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.fashion
@@ -10,14 +10,14 @@ dependencies:
     - new_blog
 id: new_blog_views_block__fashion_block_1
 theme: new_blog
-region: breadcrumb
-weight: -14
+region: hero_2
+weight: -15
 provider: null
 plugin: 'views_block:fashion-block_1'
 settings:
   id: 'views_block:fashion-block_1'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   views_label: ''
   items_per_page: none
