@@ -13,6 +13,7 @@ import './scss/header/_search.scss';
 import './scss/front-page/popular-article.scss';
 import './scss/front-page/globals.scss';
 import './scss/front-page/social-main.scss';
+import './scss/front-page/ad.scss';
 import './scss/main.scss';
 
 

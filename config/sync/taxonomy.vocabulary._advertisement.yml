@@ -1,0 +1,8 @@
+uuid: 03f2d43d-09a8-480c-8ede-d1797e6f63da
+langcode: en
+status: true
+dependencies: {  }
+name: advertisement
+vid: _advertisement
+description: ''
+weight: 0

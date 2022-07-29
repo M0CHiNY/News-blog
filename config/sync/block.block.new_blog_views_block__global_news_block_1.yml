@@ -11,7 +11,7 @@ dependencies:
 id: new_blog_views_block__global_news_block_1
 theme: new_blog
 region: content_top
-weight: -15
+weight: -16
 provider: null
 plugin: 'views_block:global_news-block_1'
 settings:

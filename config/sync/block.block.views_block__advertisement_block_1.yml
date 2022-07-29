@@ -1,0 +1,24 @@
+uuid: 5866b853-0060-4467-9ef5-971beeb4331a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.advertisement
+  module:
+    - views
+  theme:
+    - new_blog
+id: views_block__advertisement_block_1
+theme: new_blog
+region: block_one
+weight: 0
+provider: null
+plugin: 'views_block:advertisement-block_1'
+settings:
+  id: 'views_block:advertisement-block_1'
+  label: '-Advertisement-'
+  label_display: visible
+  provider: views
+  views_label: '-Advertisement-'
+  items_per_page: none
+visibility: {  }

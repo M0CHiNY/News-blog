@@ -1,0 +1,55 @@
+uuid: 22d215f5-cf75-454a-88db-52274c3e5880
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.advertisement.field_add_to_region
+    - field.field.node.advertisement.field_image
+    - field.field.node.advertisement.field_social_links
+    - node.type.advertisement
+  module:
+    - link
+    - media
+    - user
+id: node.advertisement.default
+targetEntityType: node
+bundle: advertisement
+mode: default
+content:
+  field_add_to_region:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_social_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
