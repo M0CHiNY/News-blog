@@ -1,0 +1,31 @@
+@import "globals";
+
+.block-views-blockcategories-block-1{
+  @include _breackpoint_md{
+    width: 100%;
+  }
+  .block__title.title--mod span{
+    background-color: $green;
+  }
+.view-content{
+  .views-row{
+    display: flex;
+    justify-content: space-between;
+    &:hover{
+      .views-field-name a,
+      .views-field-name-1{
+        color: $green;
+        transition: all 0.2s;
+      }
+    }
+  }
+  .views-field-name a,
+  .views-field-name-1{
+    font-size: 15px;
+    @include rubik-500;
+    color: $black;
+    text-decoration: none;
+  }
+}
+}
+
