@@ -1,0 +1,24 @@
+@import "../_global";
+.block-views-blocklatest-articles-block-1{
+  padding: 0 15px;
+  .block__title.title--mod {
+    & span {
+      background-color: $green;
+    }
+  }
+  .views-field-title:hover{
+
+    & span a {
+      color: $green;
+      transition: all 0.3s;
+
+    }
+  }
+  .views-field-uid:hover{
+    @include rubik-400;
+    & a {
+      color: $green;
+      transition: all 0.3s;
+    }
+  }
+}
