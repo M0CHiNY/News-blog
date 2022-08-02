@@ -15,6 +15,7 @@ import './scss/front-page/globals.scss';
 import './scss/front-page/social-main.scss';
 import './scss/front-page/ad.scss';
 import './scss/front-page/fashion.scss';
+import './scss/front-page/latest-articles.scss';
 import './scss/main.scss';
 
 

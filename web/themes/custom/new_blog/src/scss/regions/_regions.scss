@@ -29,6 +29,15 @@ div.wrapper > main > section.breadcrumb > div > div{
     flex-grow: 1;
   }
 }
+.section-6 {
+  .container{
+    max-width: 1116px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding: 0 15px;
+  }
+}
 .footer{
   border:none;
   &__inner{
