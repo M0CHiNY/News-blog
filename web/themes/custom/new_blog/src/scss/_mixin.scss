@@ -39,6 +39,12 @@
   }
 }
 
+@mixin _breackpoint_1000 {
+  @media (min-width: $breackpoint_1000) {
+    @content;
+  }
+}
+
 @mixin _breackpoint_1024 {
   @media (min-width: $breackpoint_1024) {
     @content;
