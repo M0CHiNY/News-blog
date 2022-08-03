@@ -1,0 +1,62 @@
+@import "globals";
+.block-views-blockfitness-block-1{
+  @include _breackpoint_md{
+    padding: 0 15px;
+  }
+
+  .node{
+    @include _breackpoint_md{
+      margin-bottom: 15px;
+    }
+    .node__content{
+      @include _breackpoint_md{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      @include  _breackpoint_1000{
+        padding-bottom: 0;
+      }
+      .node_custom_title{
+        @include  _breackpoint_md{
+          line-height: 1.0;
+          margin-top: 0;
+          & a:hover{
+            color:$blue;
+            transition: all 0.3s;
+          }
+        }
+      }
+      .node__images{
+        flex-shrink: 0;
+        img {
+          @include _breackpoint_md{
+            width: 208px;
+            height: 146px;
+          }
+        }
+      }
+      .text-content{
+        @include _breackpoint_md{
+          display: none;
+        }
+      }
+      .field--tags__item{
+        @include _breackpoint_md{
+          a:hover {
+            color: $blue;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+    &.node--view-mode-teaser .primary-image{
+      @include _breackpoint_1000{
+        position: inherit;
+      }
+    }
+  }
+  .block__title.title--mod span{
+    background-color: $blue;
+  }
+}
