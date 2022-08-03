@@ -78,32 +78,30 @@
 {{ attach_library('claro/classy.node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }} >
-      <a href="{{ url }}" rel="bookmark" }}>{{ label }} </a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
 
   <div{{ content_attributes.addClass('node__content') }}>
-
-
-    <div>
+    <div class="node__images">
       {{ content.field_image }}
     </div>
-  </div>
+    <div class="content-box">
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
+      {{ title_prefix }}
+      {% if label and not page %}
+        <h2 class="node_custom_title">
+          <a href="{{ url }}" rel="bookmark" }}>{{ label }} </a>
+        </h2>
+      {% endif %}
+      {{ title_suffix }}
+      <div class="node__box">
+        {{ content.field_tags }}
+        <div class="content-author__box">
 
+          {{ author_name }}
+          {{ node.getCreatedTime|format_date('custom_format_date') }}
+
+        </div>
       </div>
-    </footer>
-  {% endif %}
-
-
+      {{ content.body }}
+    </div>
+  </div>
 </article>
