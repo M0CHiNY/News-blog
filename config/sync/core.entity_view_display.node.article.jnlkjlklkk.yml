@@ -1,0 +1,38 @@
+uuid: 0ceae1e9-5634-41da-902c-70d934161892
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.jnlkjlklkk
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_image
+    - field.field.node.article.field_popular_article_add
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_trending_now
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: 7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk
+id: node.article.jnlkjlklkk
+targetEntityType: node
+bundle: article
+mode: jnlkjlklkk
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: slick
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  comment: true
+  field_popular_article_add: true
+  field_tags: true
+  field_trending_now: true
+  links: true
