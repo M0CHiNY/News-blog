@@ -1,21 +1,21 @@
-uuid: 9768f11b-c49a-487a-9a69-073a8b44335f
+uuid: 33e1b697-96a6-45cd-a942-eabac337e993
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - views.view.gaming
+    - views.view.categories
   module:
     - views
   theme:
     - new_blog
-id: new_blog_views_block__gaming_block_1
+id: views_block__categories_block_1_2
 theme: new_blog
-region: hero
-weight: -14
+region: block_three
+weight: 0
 provider: null
-plugin: 'views_block:gaming-block_1'
+plugin: 'views_block:categories-block_1'
 settings:
-  id: 'views_block:gaming-block_1'
+  id: 'views_block:categories-block_1'
   label: ''
   label_display: visible
   provider: views

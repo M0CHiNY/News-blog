@@ -18,6 +18,7 @@ import './scss/front-page/fashion.scss';
 import './scss/front-page/latest-articles.scss';
 import './scss/front-page/fitness.scss';
 import './scss/front-page/categories.scss';
+import './scss/front-page/trending.scss';
 import './scss/main.scss';
 
 
