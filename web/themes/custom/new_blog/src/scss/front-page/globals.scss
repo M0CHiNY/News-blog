@@ -11,22 +11,23 @@
 
     .block-views-blockglobal-news-block-1 {
       padding: 0 20px;
-      @include _breackpoint_md{
+      @include _breackpoint_md {
         padding: 0 30px;
       }
 
-      .view-id-global_news{
-        @include _breackpoint_md{
+      .view-id-global_news {
+        @include _breackpoint_md {
           display: flex;
         }
       }
-    }
-    .view-content{
-      @include _breackpoint_md{
-        margin-bottom: 0;
-        margin-right: 10px;
-        max-width: 336px;
-        width: 100%;
+
+      .view-content {
+        @include _breackpoint_md {
+          margin-bottom: 0;
+          margin-right: 10px;
+          max-width: 336px;
+          width: 100%;
+        }
       }
     }
 
@@ -47,8 +48,8 @@
       margin-bottom: 10px;
       font-size: 21px;
       @include rubik-500;
-      @include _breackpoint_md{
-        &:hover{
+      @include _breackpoint_md {
+        &:hover {
           a {
             color: #85a1b2;
           }
@@ -98,27 +99,29 @@
         align-items: center;
         margin-bottom: 20px;
         object-fit: contain;
-        @include _breackpoint_md{
+        @include _breackpoint_md {
           align-items: flex-start;
         }
 
 
         .img__item-1 {
-          max-width:212px;
+          max-width: 212px;
           width: 100%;
           margin-right: 10px;
 
-          a img{
-          //width: 136px;
+          a img {
+            //width: 136px;
             object-fit: cover;
 
           }
         }
-        .img__item-2{
+
+        .img__item-2 {
           display: block;
-          @include _breackpoint_md{
+          @include _breackpoint_md {
             line-height: 1.2;
           }
+
           & a {
             font-size: 15px;
             @include rubik-500;
@@ -126,17 +129,18 @@
             text-decoration: none;
             line-height: 1.2;
 
-            @include _breackpoint_md{
+            @include _breackpoint_md {
               font-size: 13px;
-              &:hover{
+              &:hover {
                 color: #85a1b2;
               }
             }
           }
+
           & div {
             font-size: 13px;
             color: black;
-            @include _breackpoint_md{
+            @include _breackpoint_md {
               font-size: 12px;
               display: block;
               margin-top: 5px;

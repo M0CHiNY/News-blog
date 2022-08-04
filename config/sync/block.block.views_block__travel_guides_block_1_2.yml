@@ -1,21 +1,21 @@
-uuid: 67e7c092-45df-4928-98bc-915237ad1e9d
+uuid: ab95659a-391f-4c23-9ff4-9bf9fc4ec214
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.trending_now
+    - views.view.travel_guides
   module:
     - views
   theme:
     - new_blog
-id: views_block__trending_now_block_1_2
+id: views_block__travel_guides_block_1_2
 theme: new_blog
-region: hero
-weight: -18
+region: content_top
+weight: 0
 provider: null
-plugin: 'views_block:trending_now-block_1'
+plugin: 'views_block:travel_guides-block_1'
 settings:
-  id: 'views_block:trending_now-block_1'
+  id: 'views_block:travel_guides-block_1'
   label: ''
   label_display: visible
   provider: views

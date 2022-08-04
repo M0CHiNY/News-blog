@@ -3,12 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.teaser
     - field.storage.node.body
     - field.storage.node.field_image
     - image.style.fitness_710_425_
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:8f465c5b-3bdb-4f31-8011-860cd8925f84'
   module:
     - media
     - node
+    - taxonomy
     - text
     - user
 id: fitness
@@ -406,10 +411,59 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+        field_tags_target_id:
+          id: field_tags_target_id
+          table: node__field_tags
+          field: field_tags_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            10: 10
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: tags
+          type: select
+          hierarchy: true
+          limit: true
+          error_message: true
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
       query:
         type: views_query
         options:
@@ -427,6 +481,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -444,6 +499,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

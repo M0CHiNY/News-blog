@@ -2,10 +2,6 @@ uuid: 7c870a93-cdec-4693-a38a-62cc2fa82bb0
 langcode: en
 status: false
 dependencies:
-  config:
-    - views.view.gadgest
-  module:
-    - views
   theme:
     - new_blog
 id: new_blog_views_block__gadgest_block_1
