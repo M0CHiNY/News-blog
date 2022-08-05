@@ -20,6 +20,7 @@ import './scss/front-page/fitness.scss';
 import './scss/front-page/categories.scss';
 import './scss/front-page/trending.scss';
 import './scss/front-page/travel.scss';
+import './scss/front-page/most-popular.scss';
 
 
 // js
