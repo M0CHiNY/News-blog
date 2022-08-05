@@ -1,21 +1,21 @@
-uuid: 33e1b697-96a6-45cd-a942-eabac337e993
+uuid: 5d654d0e-7e1d-4665-ae65-54e33a9685ae
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.categories
+    - views.view.must_read
   module:
     - views
   theme:
     - new_blog
-id: views_block__categories_block_1_2
+id: views_block__must_read_block_1_2
 theme: new_blog
 region: block_three
-weight: -17
+weight: -18
 provider: null
-plugin: 'views_block:categories-block_1'
+plugin: 'views_block:must_read-block_1'
 settings:
-  id: 'views_block:categories-block_1'
+  id: 'views_block:must_read-block_1'
   label: ''
   label_display: visible
   provider: views

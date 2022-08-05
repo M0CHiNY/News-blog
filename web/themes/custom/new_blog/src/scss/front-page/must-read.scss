@@ -1,0 +1,22 @@
+@import "../_global";
+
+.block-views-blockmust-read-block-1{
+  padding-bottom: 15px;
+  .block__title.title--mod {
+    & span {
+      background-color: $green;
+    }
+  }
+  margin-bottom: 15px;
+  .view-content{
+    margin-bottom: 0;
+  }
+  .block__title.title--mod {
+    & span {
+      background-color: $green;
+    }
+  }
+  .views-row{
+    padding-bottom: 15px;
+  }
+}
