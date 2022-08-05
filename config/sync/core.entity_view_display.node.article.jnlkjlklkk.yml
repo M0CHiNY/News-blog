@@ -10,8 +10,10 @@ dependencies:
     - field.field.node.article.field_popular_article_add
     - field.field.node.article.field_tags
     - field.field.node.article.field_trending_now
+    - image.style.latest_articles_size_712x427_
     - node.type.article
   module:
+    - media
     - user
 _core:
   default_config_hash: 7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk
@@ -21,18 +23,31 @@ bundle: article
 mode: jnlkjlklkk
 content:
   field_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: slick
-      link: false
+      image_link: ''
+      image_style: latest_articles_size_712x427_
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   body: true
   comment: true
   field_popular_article_add: true
-  field_tags: true
   field_trending_now: true
-  links: true

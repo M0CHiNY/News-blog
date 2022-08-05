@@ -1,6 +1,6 @@
 uuid: 5972968e-955f-4fd7-bf57-008936b0ab19
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -9,7 +9,7 @@ dependencies:
 id: mainpagecontent
 theme: new_blog
 region: content_center
-weight: 0
+weight: -16
 provider: null
 plugin: system_main_block
 settings:

@@ -2,10 +2,6 @@ uuid: fa1f8cce-31be-43e9-a84c-09278f80f396
 langcode: en
 status: false
 dependencies:
-  config:
-    - views.view.receiptes
-  module:
-    - views
   theme:
     - new_blog
 id: new_blog_views_block__receiptes_block_1

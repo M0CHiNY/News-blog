@@ -5,11 +5,11 @@ dependencies: {  }
 name: gadgets_image_size_213x160
 label: 'gadgets image size 213x160'
 effects:
-  3e89c9a0-ab52-41c9-a2db-abdc8f50f1be:
-    uuid: 3e89c9a0-ab52-41c9-a2db-abdc8f50f1be
-    id: image_scale
+  fa07f0be-1bba-4d21-aebd-b0b47685003d:
+    uuid: fa07f0be-1bba-4d21-aebd-b0b47685003d
+    id: image_scale_and_crop
     weight: 1
     data:
       width: 213
       height: 160
-      upscale: true
+      anchor: center-center
