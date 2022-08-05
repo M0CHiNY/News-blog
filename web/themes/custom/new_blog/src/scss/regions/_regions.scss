@@ -26,7 +26,8 @@ div.wrapper > main > section.breadcrumb > div > div{
 
   }
   .block-one__inner.block-grow{
-    flex-grow: 1;
+    max-width: 366px;
+    width: 100%;
   }
 }
 .section-6,

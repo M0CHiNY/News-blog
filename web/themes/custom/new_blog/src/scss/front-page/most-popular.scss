@@ -1,0 +1,46 @@
+@import "../_global";
+
+.block-views-blockmost-popular-block-1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: none;
+  @include _breackpoint_860 {
+    .block__title.title--mod span {
+      background-color: $green;
+    }
+    display: block;
+    max-width: 366px;
+    width: 100%;
+    .view > *{
+      margin-bottom: 0;
+    }
+    .views-view-grid__item {
+      border: 1px solid rgba($green, 0.1);
+      border-radius: 10px;
+    }
+    .views-view-grid__item-inner {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .views-field-field-image {
+        img {
+          max-width: 364px;
+          width: 100%;
+          position: relative;
+          top:0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          border-radius: 10px;
+        }
+      }
+      .views-field-title {
+        text-align: center;
+      }
+    }
+  }
+
+}
