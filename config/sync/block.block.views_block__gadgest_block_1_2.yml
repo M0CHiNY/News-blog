@@ -1,6 +1,6 @@
-uuid: 7c870a93-cdec-4693-a38a-62cc2fa82bb0
+uuid: e5893e28-e0c3-4a8a-845f-72031cce19e8
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.gadgest
@@ -8,10 +8,10 @@ dependencies:
     - views
   theme:
     - new_blog
-id: new_blog_views_block__gadgest_block_1
+id: views_block__gadgest_block_1_2
 theme: new_blog
-region: header_1
-weight: -8
+region: content_bottom_one
+weight: -19
 provider: null
 plugin: 'views_block:gadgest-block_1'
 settings:

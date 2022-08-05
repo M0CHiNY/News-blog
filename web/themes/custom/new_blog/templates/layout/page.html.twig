@@ -82,12 +82,16 @@
           <div class="inner__box">
             <div class="content__inner">
               {{ page.content_top }}
+              <div class="block_two">
+                {{ page.content_bottom_one }}
+              </div>
             </div>
             {% if page.block_one %}
               <div class="block-one__inner block-grow">
                 {{ page.block_one }}
               </div>
             {% endif %}
+
           </div>
         </div>
       </section>
