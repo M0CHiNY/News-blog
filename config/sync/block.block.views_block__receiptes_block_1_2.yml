@@ -1,6 +1,6 @@
-uuid: fa1f8cce-31be-43e9-a84c-09278f80f396
+uuid: 14c4f2b2-cfd3-4b6c-b7b0-e740bd688587
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.receiptes
@@ -8,10 +8,10 @@ dependencies:
     - views
   theme:
     - new_blog
-id: new_blog_views_block__receiptes_block_1
+id: views_block__receiptes_block_1_2
 theme: new_blog
-region: header_1
-weight: -2
+region: content_bottom_one
+weight: -18
 provider: null
 plugin: 'views_block:receiptes-block_1'
 settings:

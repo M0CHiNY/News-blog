@@ -14,6 +14,7 @@ regions:
   hero: 'Hero 1 (full width)'
   breadcrumb: Breadcrumb
   content_top: Content top
+  content_bottom_one: Content bottom
   block_one: 'block 1'
   hero_2: 'Hero 2 (full width)'
   content_center: Content center
