@@ -8,9 +8,13 @@ dependencies:
     - field.storage.node.field_tags
     - image.style.image_size_710_468
     - node.type.article
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:8708f7cb-639c-45f0-960a-c0888cf0bd49'
   module:
     - media
     - node
+    - taxonomy
     - text
     - user
 id: gaming
@@ -405,7 +409,7 @@ display:
           click_sort_column: summary
           type: text_summary_or_trimmed
           settings:
-            trim_length: 200
+            trim_length: 120
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -417,10 +421,26 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: some
+        type: full
         options:
           offset: 0
           items_per_page: 1
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -483,10 +503,63 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_tags_target_id:
+          id: field_tags_target_id
+          table: node__field_tags
+          field: field_tags_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            9: 9
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: tags
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
       style:
         type: default
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline:
+            uid: uid
+            created: created
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -504,6 +577,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -522,6 +597,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
