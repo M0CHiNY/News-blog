@@ -21,7 +21,7 @@ import './scss/front-page/categories.scss';
 import './scss/front-page/trending.scss';
 import './scss/front-page/travel.scss';
 
-
+import './scss/front-page/must-read.scss';
 // js
 
 import "./js/menu.js"

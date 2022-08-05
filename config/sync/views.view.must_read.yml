@@ -287,10 +287,26 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: some
+        type: full
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 3
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -403,6 +419,13 @@ display:
         type: default
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline:
+            uid: uid
+            created: created
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -420,6 +443,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
@@ -438,6 +462,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
