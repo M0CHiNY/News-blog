@@ -22,7 +22,7 @@ import './scss/front-page/trending.scss';
 import './scss/front-page/travel.scss';
 import './scss/front-page/most-popular.scss';
 
-
+import './scss/front-page/gaming.scss';
 // js
 
 import "./js/menu.js"

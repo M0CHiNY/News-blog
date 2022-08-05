@@ -1,0 +1,10 @@
+@import "globals";
+.block-views-blockgaming-block-1{
+  .block__title.title--mod span{
+    background-color: $blue;
+  }
+  .view > *{
+    margin-bottom: 0;
+  }
+
+}
