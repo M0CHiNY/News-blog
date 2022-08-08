@@ -1,29 +1,30 @@
-uuid: d70644cf-1a59-4739-8806-518f8a20013e
+uuid: 0b92d5a3-ca03-4a23-b7be-60e42bd924c8
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.fitness
+    - views.view.related_articles
   module:
     - system
     - views
   theme:
     - new_blog
-id: new_blog_views_block__fitness_block_1
+id: views_block__related_articles_block_1
 theme: new_blog
 region: content_center
-weight: -13
+weight: -14
 provider: null
-plugin: 'views_block:fitness-block_1'
+plugin: 'views_block:related_articles-block_1'
 settings:
-  id: 'views_block:fitness-block_1'
+  id: 'views_block:related_articles-block_1'
   label: ''
   label_display: visible
   provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    negate: false
-    pages: '<front>'
+    negate: true
+    pages: "/user/* \r\n<front>"

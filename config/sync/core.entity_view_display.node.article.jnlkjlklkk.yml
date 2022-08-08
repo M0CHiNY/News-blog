@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_paragraph
     - field.field.node.article.field_popular_article_add
     - field.field.node.article.field_tags
     - field.field.node.article.field_trending_now
@@ -49,5 +50,6 @@ content:
 hidden:
   body: true
   comment: true
+  field_paragraph: true
   field_popular_article_add: true
   field_trending_now: true

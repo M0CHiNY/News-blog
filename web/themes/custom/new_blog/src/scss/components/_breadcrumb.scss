@@ -1,0 +1,33 @@
+@import "../_global";
+.breadcrumb{
+  margin-top: 50px;
+  padding-left:10px;
+  padding-right: 10px;
+  @include _breackpoint_860{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 1116px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .breadcrumb__list{
+    padding-bottom: 0;
+  }
+  .breadcrumb__item{
+    a {
+      color: $grey;
+      font-size: 14px;
+      line-height: 18px;
+      @include OpenSans-700;
+    }
+    &:nth-child(n+2):before{
+      width: 0.4rem;
+      height: 0.4rem;
+      margin-left: 1px;
+    }
+  }
+}
