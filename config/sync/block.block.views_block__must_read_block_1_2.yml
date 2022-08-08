@@ -1,17 +1,18 @@
-uuid: bb94350c-28cb-49b0-b68d-af8305fd9a7a
+uuid: 7be5495e-bd9b-4adb-b6e2-b28dfa637b40
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - views.view.must_read
   module:
+    - system
     - views
   theme:
     - new_blog
-id: new_blog_views_block__must_read_block_1
+id: views_block__must_read_block_1_2
 theme: new_blog
-region: header_1
-weight: -11
+region: block_three
+weight: 0
 provider: null
 plugin: 'views_block:must_read-block_1'
 settings:
@@ -21,4 +22,8 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

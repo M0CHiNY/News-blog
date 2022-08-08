@@ -1,0 +1,21 @@
+uuid: 98119c61-9fe0-4760-b54e-c7dde930b4bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_settings
+    - paragraphs.paragraphs_type.text_media
+  module:
+    - options
+id: paragraph.text_media.field_settings
+field_name: field_settings
+entity_type: paragraph
+bundle: text_media
+label: settings
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

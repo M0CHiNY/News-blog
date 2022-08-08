@@ -24,6 +24,8 @@ import './scss/front-page/most-popular.scss';
 
 import './scss/front-page/gaming.scss';
 import './scss/front-page/gadgest_and_receiptes.scss';
+import './scss/components/_breadcrumb.scss';
+import './scss/content-page/content.scss';
 
 // js
 

@@ -49,7 +49,6 @@
       {% endif %}
 
     </div>
-    </div>
   </header>
 
 {% endif %}
@@ -58,13 +57,13 @@
 <div class="wrapper">
 
   <main class="main">
-    {% if page.breadcrumb %}
-      <section class="breadcrumb">
-        <div class="container">
-          {{ page.breadcrumb }}
-        </div>
-      </section>
-    {% endif %}
+
+    <section class="breadcrumb">
+      <div class="container">
+        {{ page.breadcrumb }}
+      </div>
+    </section>
+
 
     {% if page.hero %}
       <section class="section-1">
@@ -76,26 +75,26 @@
       </section>
     {% endif %}
 
-    {% if page.content_top %}
-      <section class="section-2">
-        <div class="container">
-          <div class="inner__box">
-            <div class="content__inner">
-              {{ page.content_top }}
-              <div class="block_two">
-                {{ page.content_bottom_one }}
-              </div>
-            </div>
-            {% if page.block_one %}
-              <div class="block-one__inner block-grow">
-                {{ page.block_one }}
-              </div>
-            {% endif %}
 
+    <section class="section-2 section-content">
+      <div class="container">
+        <div class="inner__box">
+          <div class="content__inner">
+            {{ page.content_top }}
+            <div class="block_two">
+              {{ page.content_bottom_one }}
+            </div>
           </div>
+          {% if page.block_one %}
+            <div class="block-one__inner block-grow">
+              {{ page.block_one }}
+            </div>
+          {% endif %}
+
         </div>
-      </section>
-    {% endif %}
+      </div>
+    </section>
+
 
     {% if page.hero_2 %}
       <section class="section-3">

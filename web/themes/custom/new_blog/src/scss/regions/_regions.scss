@@ -48,6 +48,13 @@ div.wrapper > main > section.breadcrumb > div > div{
   }
 }
 
+.main .section-6{
+  padding: 30px 0;
+  @include _breackpoint_md{
+    padding: 50px 0;
+  }
+}
+
 .footer{
   border:none;
   &__inner{
@@ -60,5 +67,14 @@ div.wrapper > main > section.breadcrumb > div > div{
   .region.region--breadcrumb.grid-full.layout--pass--content-medium.ie11-autorow{
     display: flex;
   }
-
 }
+
+
+
+.section-4,
+.section-5,
+.section-6 {
+  padding: 30px 0;
+}
+
+
