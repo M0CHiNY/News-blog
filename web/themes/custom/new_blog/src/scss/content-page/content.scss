@@ -76,6 +76,7 @@
       }
     }
   }
+
   .view-content {
     margin-bottom: 0;
 
@@ -93,5 +94,28 @@
     }
 
   }
+}
 
+//paragraph behavior
+.image-position--left,
+.image-position--right {
+  .field--name-field-image{
+    flex-shrink: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+  }
+  .field--name-field-text{
+    font-family: "Lora", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.8;
+  }
+}
+
+.image-position--right {
+  .field--name-field-image{
+    float: right;
+  }
 }
