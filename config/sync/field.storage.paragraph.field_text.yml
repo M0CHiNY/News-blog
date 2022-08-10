@@ -1,16 +1,17 @@
-uuid: f8a1e5f8-d74a-4200-bf55-17947be92a1b
+uuid: f811cbfb-8a13-4c87-87bb-fd26f4acf2f8
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
+    - text
 id: paragraph.field_text
 field_name: field_text
 entity_type: paragraph
-type: string_long
+type: text
 settings:
-  case_sensitive: false
-module: core
+  max_length: 255
+module: text
 locked: false
 cardinality: 1
 translatable: true

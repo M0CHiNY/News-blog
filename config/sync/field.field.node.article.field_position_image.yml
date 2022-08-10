@@ -1,18 +1,18 @@
-uuid: ea67a8bc-8f6a-4594-9bd9-4887be0346f9
+uuid: 11fa5c88-b9ad-41f9-8a5b-5bbd2223ee97
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraph
+    - field.storage.node.field_position_image
     - node.type.article
-    - paragraphs.paragraphs_type.text_media
+    - paragraphs.paragraphs_type.text_image
   module:
     - entity_reference_revisions
-id: node.article.field_paragraph
-field_name: field_paragraph
+id: node.article.field_position_image
+field_name: field_position_image
 entity_type: node
 bundle: article
-label: paragraph
+label: 'position image'
 description: ''
 required: false
 translatable: false
@@ -22,10 +22,10 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      text_media: text_media
+      text_image: text_image
     negate: 0
     target_bundles_drag_drop:
-      text_media:
+      text_image:
         weight: 2
         enabled: true
 field_type: entity_reference_revisions
