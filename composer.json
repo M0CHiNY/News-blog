@@ -21,6 +21,8 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
+        "drupal/entity_reference_revisions": "^1.9",
+        "drupal/paragraphs": "^1.14",
         "drupal/slick": "^2.6",
         "drupal/slick_views": "^2.6",
         "drush/drush": "^11.0",
