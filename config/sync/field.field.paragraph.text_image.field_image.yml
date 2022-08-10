@@ -1,15 +1,15 @@
-uuid: da72778e-fd60-4cc4-a113-353c052e352a
+uuid: c787c53b-47c1-413f-96a5-ca4c572297fb
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
     - media.type.image
-    - paragraphs.paragraphs_type.text_media
-id: paragraph.text_media.field_image
+    - paragraphs.paragraphs_type.text_image
+id: paragraph.text_image.field_image
 field_name: field_image
 entity_type: paragraph
-bundle: text_media
+bundle: text_image
 label: image
 description: ''
 required: true

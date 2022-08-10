@@ -6,8 +6,8 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_paragraph
     - field.field.node.article.field_popular_article_add
+    - field.field.node.article.field_position_image
     - field.field.node.article.field_tags
     - field.field.node.article.field_trending_now
     - node.type.article
@@ -53,9 +53,16 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
-  field_paragraph:
+  field_popular_article_add:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_position_image:
     type: paragraphs
-    weight: 28
+    weight: 26
     region: content
     settings:
       title: Paragraph
@@ -66,17 +73,11 @@ content:
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: text_image
       features:
+        add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
-  field_popular_article_add:
-    type: boolean_checkbox
-    weight: 27
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   field_tags:
     type: options_select
@@ -86,7 +87,7 @@ content:
     third_party_settings: {  }
   field_trending_now:
     type: boolean_checkbox
-    weight: 26
+    weight: 11
     region: content
     settings:
       display_label: true

@@ -7,8 +7,8 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_paragraph
     - field.field.node.article.field_popular_article_add
+    - field.field.node.article.field_position_image
     - field.field.node.article.field_tags
     - field.field.node.article.field_trending_now
     - image.style.fitness_710_425_
@@ -58,6 +58,6 @@ content:
     region: content
 hidden:
   comment: true
-  field_paragraph: true
   field_popular_article_add: true
+  field_position_image: true
   field_trending_now: true

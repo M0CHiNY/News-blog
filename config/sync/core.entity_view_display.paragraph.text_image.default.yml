@@ -1,18 +1,18 @@
-uuid: cf615235-3714-4a5d-861c-79319a43460c
+uuid: db1c9eb3-2146-4188-9d07-7503ee22705e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.text_media.field_image
-    - field.field.paragraph.text_media.field_settings
-    - field.field.paragraph.text_media.field_text
+    - field.field.paragraph.text_image.field_image
+    - field.field.paragraph.text_image.field_text
     - image.style.large
-    - paragraphs.paragraphs_type.text_media
+    - paragraphs.paragraphs_type.text_image
   module:
     - media
-id: paragraph.text_media.default
+    - text
+id: paragraph.text_image.default
 targetEntityType: paragraph
-bundle: text_media
+bundle: text_image
 mode: default
 content:
   field_image:
@@ -27,11 +27,10 @@ content:
     weight: 0
     region: content
   field_text:
-    type: basic_string
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
-hidden:
-  field_settings: true
+hidden: {  }

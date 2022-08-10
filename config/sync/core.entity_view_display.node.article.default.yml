@@ -7,8 +7,8 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
-    - field.field.node.article.field_paragraph
     - field.field.node.article.field_popular_article_add
+    - field.field.node.article.field_position_image
     - field.field.node.article.field_tags
     - field.field.node.article.field_trending_now
     - node.type.article
@@ -49,7 +49,7 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_paragraph:
+  field_position_image:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
