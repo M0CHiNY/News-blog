@@ -27,11 +27,11 @@ class CustomWeatherBlock extends BlockBase {
 
   /**
    * Function get IP current user.
+   *
+   * @todo This function needed dependency.
    */
-
-  // @todo This function needed dependency.
   public function getIpUser() {
-//    return \Drupal::request()->getClientIp();
+    // Return \Drupal::request()->getClientIp();
     return '172.21.0.6';
   }
 
