@@ -21,7 +21,7 @@ class CustomWeatherBlock extends BlockBase {
    */
   public function build() {
     return [
-      '#markup' => "{$this->getAPIweather()} district. Your IP is:  {$this->getIpUser()}",
+      '#markup' => "district. Your IP is:  {$this->getIpUser()}",
     ];
   }
 
@@ -38,14 +38,11 @@ class CustomWeatherBlock extends BlockBase {
   /**
    * Function add settings API.
    */
-  public function getApiWeather() {
-    $url = 'http://api.weatherapi.com/v1/current.json?key=75b555a648604b3fb3a84430221108&q=lutsk Volyn&aqi=no';
+  public static function getApiWeather($token, $city_name) {
+    $url = "http://api.weatherapi.com/v1/current.json?key={$token}&q={$city_name}";
     $client = new Client();
     $response = $client->get($url);
-    $response_data = json_decode($response->getBody()->getContents(), TRUE);
-    $result = $response_data['location']['name'];
-    return $result;
-
+    return json_decode($response->getBody()->getContents(), TRUE);
   }
 
 }
