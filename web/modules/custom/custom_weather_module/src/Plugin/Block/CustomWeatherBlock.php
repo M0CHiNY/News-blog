@@ -34,10 +34,10 @@ class CustomWeatherBlock extends BlockBase {
    * @todo dependency injection.
    */
   public function getConfigSettings(): array {
-    $city = \Drupal::config('custom_weather_module.settings')
-      ->get('city');
-    $token = \Drupal::config('custom_weather_module.settings')
-      ->get('token');
+    // $city = \Drupal::config('custom_weather_module.settings')->get('city');
+    // $token = \Drupal::config('custom_weather_module.settings')->get('token');
+    $token = "75b555a648604b3fb3a84430221108";
+    $city = "lutsk";
     return CustomWeatherBlock::getApiWeather($token, $city);
   }
 
@@ -47,7 +47,7 @@ class CustomWeatherBlock extends BlockBase {
    * @todo This function needed dependency.
    */
   public function getIpUser() {
-    // \Drupal::request()->getClientIp();
+    //$ip = \Drupal::request()->getClientIp();
     $ip = '46.164.130.92';
     $url = "http://ip-api.com/json/{$ip}?fields=24593";
     $client = new Client();

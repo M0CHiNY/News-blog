@@ -1,10 +1,13 @@
 .block-custom-weather-block .block__content {
   display: flex;
   align-items: center;
-  gap: 5px; }
+  gap: 5px;
+}
 .block-custom-weather-block .block__content .weather__icon img {
   width: 25px;
-  height: 25px; }
+  height: 25px;
+}
 .block-custom-weather-block .block__content .weather__loc,
 .block-custom-weather-block .block__content .weather__temp {
-  font-size: 12px; }
+  font-size: 12px;
+}
