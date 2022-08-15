@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Main file for hooks and custom functions.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function custom_weather_module_theme($existing, $type, $theme, $path) {
+  return [
+    'custom_weather_module_style' => [
+      'variables' => [
+        'location' => NULL,
+        'temp_c' => NULL,
+        'icon' => NULL,
+      ],
+    ],
+  ];
+}

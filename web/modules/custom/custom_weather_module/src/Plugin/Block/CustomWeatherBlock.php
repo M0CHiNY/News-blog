@@ -21,8 +21,24 @@ class CustomWeatherBlock extends BlockBase {
    */
   public function build() {
     return [
-      '#markup' => "district. Your IP is:  {$this->getIpUser()}",
+      '#theme' => 'custom_weather_module_style',
+      '#location' => $this->getIpUser()['city'],
+      '#temp_c' => $this->getConfigSettings()['current']['temp_c'],
+      '#icon' => $this->getConfigSettings()['current']['condition']['icon'],
     ];
+  }
+
+  /**
+   * Function get config settings & connect API.
+   *
+   * @todo dependency injection.
+   */
+  public function getConfigSettings(): array {
+    $city = \Drupal::config('custom_weather_module.settings')
+      ->get('city');
+    $token = \Drupal::config('custom_weather_module.settings')
+      ->get('token');
+    return CustomWeatherBlock::getApiWeather($token, $city);
   }
 
   /**
@@ -31,8 +47,12 @@ class CustomWeatherBlock extends BlockBase {
    * @todo This function needed dependency.
    */
   public function getIpUser() {
-    // Return \Drupal::request()->getClientIp();
-    return '172.21.0.6';
+    // \Drupal::request()->getClientIp();
+    $ip = '46.164.130.92';
+    $url = "http://ip-api.com/json/{$ip}?fields=24593";
+    $client = new Client();
+    $response = $client->get($url);
+    return json_decode($response->getBody(), TRUE);
   }
 
   /**
@@ -42,7 +62,7 @@ class CustomWeatherBlock extends BlockBase {
     $url = "http://api.weatherapi.com/v1/current.json?key={$token}&q={$city_name}";
     $client = new Client();
     $response = $client->get($url);
-    return json_decode($response->getBody()->getContents(), TRUE);
+    return json_decode($response->getBody(), TRUE);
   }
 
 }
