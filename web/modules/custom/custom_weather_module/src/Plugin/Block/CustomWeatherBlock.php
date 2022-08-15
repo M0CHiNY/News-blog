@@ -47,7 +47,7 @@ class CustomWeatherBlock extends BlockBase {
    * @todo This function needed dependency.
    */
   public function getIpUser() {
-    //$ip = \Drupal::request()->getClientIp();
+    // $ip = \Drupal::request()->getClientIp();
     $ip = '46.164.130.92';
     $url = "http://ip-api.com/json/{$ip}?fields=24593";
     $client = new Client();
