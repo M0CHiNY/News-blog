@@ -58,11 +58,11 @@
         "files": ["load.environment.php"]
     },
     "scripts": {
-        "pre-install-cmd": [
+       "pre-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": "@update-git-hooks",
         "post-update-cmd": "@update-git-hooks",
