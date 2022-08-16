@@ -11,7 +11,7 @@ dependencies:
 id: new_blog_topmenu
 theme: new_blog
 region: header_1
-weight: -14
+weight: -12
 provider: null
 plugin: 'system_menu_block:top-menu'
 settings:

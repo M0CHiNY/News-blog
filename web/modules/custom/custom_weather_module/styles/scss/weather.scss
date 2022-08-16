@@ -1,0 +1,17 @@
+.block-custom-weather-block{
+  .block__content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .weather__icon{
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .weather__loc,
+    .weather__temp{
+      font-size: 12px;
+    }
+  }
+}
