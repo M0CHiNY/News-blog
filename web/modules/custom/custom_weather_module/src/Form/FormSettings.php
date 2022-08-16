@@ -82,7 +82,7 @@ class FormSettings extends ConfigFormBase {
      */
     $status = $this->getApiWeather($token, $city);
     if (!$status['status']) {
-      $form_state->setErrorByName('default_token', "{$status['data']->getMessage()}");
+      $form_state->setErrorByName('default_token', $status['data']->getMessage());
     }
   }
 

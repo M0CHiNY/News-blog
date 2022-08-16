@@ -23,7 +23,6 @@
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/entity_reference_revisions": "^1.9",
-        "drupal/openweather": "^1.1",
         "drupal/paragraphs": "^1.14",
         "drupal/slick": "^2.6",
         "drupal/slick_views": "^2.6",

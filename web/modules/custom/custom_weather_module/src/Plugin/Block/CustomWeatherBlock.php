@@ -24,11 +24,16 @@ class CustomWeatherBlock extends BlockBase {
    * {@inheritDoc}
    */
   public function build() {
+    if ($this->getConfigSettings() !== NULL) {
+      $config = $this->getConfigSettings();
+      $temp = $config['current']['temp_c'];
+      $icon = $this->getConfigSettings()['current']['condition']['icon'];
+    }
     return [
       '#theme' => 'custom_weather_module_style',
-      '#location' => $this->getIpUser()['city'],
-      '#temp_c' => $this->getConfigSettings()['current']['temp_c'],
-      '#icon' => $this->getConfigSettings()['current']['condition']['icon'],
+      '#location' => $this->getIpUser()['city'] ?? "",
+      '#temp_c' => $temp,
+      '#icon' => $icon,
     ];
   }
 
@@ -44,6 +49,9 @@ class CustomWeatherBlock extends BlockBase {
     $city = "lutsk";
     if ($this->getApiWeather($token, $city)['status']) {
       $data = $this->getApiWeather($token, $city)['data'];
+    }
+    else {
+      $data = FALSE;
     }
     return $data;
   }
