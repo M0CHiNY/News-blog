@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the custom weather module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function custom_weather_module_install() {
+  /*
+   * @todo add phpcs
+   */
+  if (\Drupal::configFactory()
+    ->get('custom_weather_module.settings')
+    ->isNew()) {
+    \Drupal::messenger()
+      ->addWarning(' Default api keys missing, please fill out weather form');
+    \Drupal::logger('custom_weather_module.settings')
+      ->error('Module installed, But custom_weather_module.settings(config) is empty');
+  }
+}
