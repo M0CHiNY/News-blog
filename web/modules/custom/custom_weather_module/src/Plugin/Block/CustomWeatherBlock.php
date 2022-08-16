@@ -24,10 +24,9 @@ class CustomWeatherBlock extends BlockBase {
    * {@inheritDoc}
    */
   public function build() {
-    if ($this->getConfigSettings() !== NULL) {
-      $config = $this->getConfigSettings();
-      $temp = $config['current']['temp_c'];
-      $icon = $this->getConfigSettings()['current']['condition']['icon'];
+    if ($config = $this->getConfigSettings()) {
+      $temp = $config['current']['temp_c'] ?? "";
+      $icon = $this->getConfigSettings()['current']['condition']['icon'] ?? "";
     }
     return [
       '#theme' => 'custom_weather_module_style',
