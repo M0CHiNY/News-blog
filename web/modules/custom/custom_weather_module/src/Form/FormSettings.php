@@ -78,7 +78,7 @@ class FormSettings extends ConfigFormBase {
       $form_state->setErrorByName('default_city', $this->t('Enter the city in the correct format or the city name is too short.'));
     }
     /*
-     *confirm the correct spelling of strlen token.
+     *this function confirm the correct spelling of token.
      */
     $status = $this->getApiWeather($token, $city);
     if (!$status['status']) {
