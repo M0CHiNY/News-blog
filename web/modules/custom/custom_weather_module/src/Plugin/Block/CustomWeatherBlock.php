@@ -3,7 +3,9 @@
 namespace Drupal\custom_weather_module\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\custom_weather_module\Traits\ConnectApi;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 
 /**
  * Provides a "Custom weather module" block.
@@ -15,6 +17,8 @@ use GuzzleHttp\Client;
  * )
  */
 class CustomWeatherBlock extends BlockBase {
+
+  use ConnectApi;
 
   /**
    * {@inheritDoc}
@@ -35,10 +39,13 @@ class CustomWeatherBlock extends BlockBase {
    */
   public function getConfigSettings(): array {
     // $city = \Drupal::config('custom_weather_module.settings')->get('city');
-    // $token = \Drupal::config('custom_weather_module.settings')->get('token');
+    //     $token = \Drupal::config('custom_weather_module.settings')->get('token');
     $token = "75b555a648604b3fb3a84430221108";
     $city = "lutsk";
-    return CustomWeatherBlock::getApiWeather($token, $city);
+    if ($this->getApiWeather($token, $city)['status']) {
+      $data = $this->getApiWeather($token, $city)['data'];
+    }
+    return $data;
   }
 
   /**
@@ -51,18 +58,14 @@ class CustomWeatherBlock extends BlockBase {
     $ip = '46.164.130.92';
     $url = "http://ip-api.com/json/{$ip}?fields=24593";
     $client = new Client();
-    $response = $client->get($url);
-    return json_decode($response->getBody(), TRUE);
-  }
+    try {
+      $response = $client->get($url);
+      return json_decode($response->getBody(), TRUE);
+    }
+    catch (RequestException $e) {
+      return FALSE;
+    }
 
-  /**
-   * Function add settings API.
-   */
-  public static function getApiWeather($token, $city_name) {
-    $url = "http://api.weatherapi.com/v1/current.json?key={$token}&q={$city_name}";
-    $client = new Client();
-    $response = $client->get($url);
-    return json_decode($response->getBody(), TRUE);
   }
 
 }

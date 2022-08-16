@@ -4,13 +4,14 @@ namespace Drupal\custom_weather_module\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\custom_weather_module\Plugin\Block\CustomWeatherBlock;
-use GuzzleHttp\Exception\RequestException;
+use Drupal\custom_weather_module\Traits\ConnectApi;
 
 /**
  * Defines a form that configures forms module settings.
  */
 class FormSettings extends ConfigFormBase {
+
+  use ConnectApi;
 
   /**
    * {@inheritdoc}
@@ -79,20 +80,9 @@ class FormSettings extends ConfigFormBase {
     /*
      *confirm the correct spelling of strlen token.
      */
-    if (strlen($token) < 10) {
-      $form_state->setErrorByName('default_token', $this->t('The token is too short, min 10 symbols.'));
-    }
-    elseif (strlen($token) > 40) {
-      $form_state->setErrorByName('default_token', $this->t("The token is too long, max 40 symbols."));
-    }
-    try {
-      /*
-       * We take data from the API
-       */
-      CustomWeatherBlock::getApiWeather($token, $city);
-    }
-    catch (RequestException $e) {
-      $form_state->setErrorByName('default_token', $e->getMessage());
+    $status = $this->getApiWeather($token, $city);
+    if (!$status['status']) {
+      $form_state->setErrorByName('default_token', "{$status['data']->getMessage()}");
     }
   }
 
