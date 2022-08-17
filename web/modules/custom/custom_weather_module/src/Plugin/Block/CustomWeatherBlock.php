@@ -19,35 +19,70 @@ use GuzzleHttp\Exception\RequestException;
 class CustomWeatherBlock extends BlockBase {
 
   use ConnectApi;
+  /*
+   * The constant is the cache id.
+   */
+  const ID = 'weather_id';
 
   /**
    * {@inheritDoc}
    */
   public function build() {
-    if ($config = $this->getConfigSettings()) {
-      $temp = $config['current']['temp_c'] ?? "";
-      $icon = $config['current']['condition']['icon'] ?? "";
+    if ($data = $this->getData()) {
+      $temp = $data['current']['temp_c'] ?? "";
+      $icon = $data['current']['condition']['icon'] ?? "";
+      $city = $data['location']['name'] ?? "";
     }
     return [
       '#theme' => 'custom_weather_module_style',
-      '#location' => $this->getIpUser()['city'] ?? "",
-      '#temp_c' => $temp,
-      '#icon' => $icon,
+      '#location' => $city ?? "",
+      '#temp_c' => $temp ?? "",
+      '#icon' => $icon ?? "",
     ];
   }
 
   /**
-   * Function get config settings & connect API.
-   *
-   * @todo dependency injection.
+   * Function setCache set API data and write this in cache.
    */
-  public function getConfigSettings(): array {
-    // $city = \Drupal::config('custom_weather_module.settings')->get('city');
-    // $token = \Drupal::config('custom_weather_module.settings')->get('token');
-    $token = "75b555a648604b3fb3a84430221108";
-    $city = "lutsk";
-    if ($this->getApiWeather($token, $city)['status']) {
-      $data = $this->getApiWeather($token, $city)['data'];
+  public function setCacheWeather() {
+    /*
+    @todo phpcs.
+    variable $citi get from config value city name.
+    variable $token get from config value.
+    return dataAPI;
+     */
+    $city = \Drupal::config('custom_weather_module.settings')->get('city');
+    $token = \Drupal::config('custom_weather_module.settings')->get('token');
+    if (!isset($city)) {
+      $city = $this->getIpUser()['city'];
+    }
+    $dataAPI = $this->getApiWeather($token, $city);
+    /*
+    @todo phpcs.
+     */
+    \Drupal::cache()->set(self::ID, $dataAPI, time() + 86400);
+    return \Drupal::cache()->get(self::ID)->data;
+  }
+
+  /**
+   * The function checks whether an entry exists in the cache.
+   */
+  public function getCacheWeather() {
+    if ($cache = \Drupal::cache()->get(self::ID)) {
+      $data = $cache->data;
+    }
+    else {
+      $data = $this->setCacheWeather();
+    }
+    return $data;
+  }
+
+  /**
+   * Function get cache with data or return false.
+   */
+  public function getData() {
+    if ($this->getCacheWeather()) {
+      $data = $this->getCacheWeather()['data'];
     }
     else {
       $data = FALSE;
@@ -61,8 +96,8 @@ class CustomWeatherBlock extends BlockBase {
    * @todo This function needed dependency.
    */
   public function getIpUser() {
-    // $ip = \Drupal::request()->getClientIp();
-    $ip = '46.164.130.92';
+    $ip = \Drupal::request()->getClientIp();
+    $ip = "176.241.140.177";
     $client = new Client();
     try {
       $url = "http://ip-api.com/json/{$ip}?fields=24593";
