@@ -28,16 +28,11 @@ class CustomWeatherBlock extends BlockBase {
    * {@inheritDoc}
    */
   public function build() {
-    if ($data = $this->getData()) {
-      $temp = $data['current']['temp_c'] ?? "";
-      $icon = $data['current']['condition']['icon'] ?? "";
-      $city = $data['location']['name'] ?? "";
-    }
     return [
       '#theme' => 'custom_weather_module_style',
-      '#location' => $city ?? "",
-      '#temp_c' => $temp ?? "",
-      '#icon' => $icon ?? "",
+      '#location' => $this->getData()['location']['name'] ?? '',
+      '#temp_c' => $this->getData()['current']['temp_c'] ?? '',
+      '#icon' => $this->getData()['current']['condition']['icon'] ?? '',
     ];
   }
 
@@ -51,16 +46,20 @@ class CustomWeatherBlock extends BlockBase {
     variable $token get from config value.
     return dataAPI;
      */
+    // phpcs:ignore
     $city = \Drupal::config('custom_weather_module.settings')->get('city');
+    // phpcs:ignore
     $token = \Drupal::config('custom_weather_module.settings')->get('token');
     if (!isset($city)) {
-      $city = $this->getIpUser()['city'];
+      $city = $this->getIpUser()['city'] ?? '';
     }
     $dataAPI = $this->getApiWeather($token, $city);
     /*
     @todo phpcs.
      */
-    \Drupal::cache()->set(self::ID, $dataAPI, time() + 86400);
+    // phpcs:ignore
+    \Drupal::cache()->set(self::ID, $dataAPI, time() + 3600);
+    // phpcs:ignore
     return \Drupal::cache()->get(self::ID)->data;
   }
 
@@ -68,6 +67,7 @@ class CustomWeatherBlock extends BlockBase {
    * The function checks whether an entry exists in the cache.
    */
   public function getCacheWeather() {
+    // phpcs:ignore
     if ($cache = \Drupal::cache()->get(self::ID)) {
       $data = $cache->data;
     }
@@ -81,8 +81,8 @@ class CustomWeatherBlock extends BlockBase {
    * Function get cache with data or return false.
    */
   public function getData() {
-    if ($this->getCacheWeather()) {
-      $data = $this->getCacheWeather()['data'];
+    if ($arr = $this->getCacheWeather()) {
+      $data = $arr['data'];
     }
     else {
       $data = FALSE;
@@ -96,6 +96,7 @@ class CustomWeatherBlock extends BlockBase {
    * @todo This function needed dependency.
    */
   public function getIpUser() {
+    // phpcs:ignore
     $ip = \Drupal::request()->getClientIp();
     $ip = "176.241.140.177";
     $client = new Client();
