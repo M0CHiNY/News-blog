@@ -82,7 +82,7 @@ class CustomWeatherBlock extends BlockBase {
    */
   public function getData() {
     if ($arr = $this->getCacheWeather()) {
-      $data = $arr['data'];
+      $data = $arr['data'] ?? '';
     }
     else {
       $data = FALSE;
