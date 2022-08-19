@@ -21,3 +21,45 @@ function custom_weather_module_install() {
       ->error('Module installed, But custom_weather_module.settings(config) is empty');
   }
 }
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ *
+ * @ingroup custom_weather_module_schema.
+ */
+function custom_weather_module_schema(): array {
+  $schema['custom_weather_module'] = [
+    'description' => 'Custom module weather.',
+    'fields' => [
+      'pid' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique person ID.',
+      ],
+      'uid' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => "Creator user's {users}.uid",
+      ],
+      'location' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Location user.',
+      ],
+    ],
+    'primary key' => ['pid'],
+    'indexes' => [
+      'uid' => ['uid'],
+      'location' => ['location'],
+    ],
+  ];
+
+  return $schema;
+}

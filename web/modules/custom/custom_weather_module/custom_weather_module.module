@@ -15,6 +15,7 @@ function custom_weather_module_theme($existing, $type, $theme, $path) {
         'location' => NULL,
         'temp_c' => NULL,
         'icon' => NULL,
+        'location_count' => NULL,
       ],
     ],
   ];

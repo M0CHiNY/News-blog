@@ -26,13 +26,23 @@ class CustomWeatherBlock extends BlockBase {
 
   /**
    * {@inheritDoc}
+   *
+   * @throws \Exception
    */
   public function build() {
+
+    $location = $this->getData()['location']['name'];
+    foreach ($this->getCountValue($location) as $key => $value) {
+      if ($key === $location) {
+        $count_loc = "Users use the location ({$value})";
+      }
+    }
     return [
       '#theme' => 'custom_weather_module_style',
-      '#location' => $this->getData()['location']['name'] ?? '',
+      '#location' => $location ?? '',
       '#temp_c' => $this->getData()['current']['temp_c'] ?? '',
       '#icon' => $this->getData()['current']['condition']['icon'] ?? '',
+      '#location_count' => $count_loc ?? '',
     ];
   }
 
@@ -40,6 +50,7 @@ class CustomWeatherBlock extends BlockBase {
    * Function setCache set API data and write this in cache.
    */
   public function setCacheWeather() {
+
     /*
     @todo phpcs.
     variable $citi get from config value city name.
@@ -98,7 +109,7 @@ class CustomWeatherBlock extends BlockBase {
   public function getIpUser() {
     // phpcs:ignore
     $ip = \Drupal::request()->getClientIp();
-    $ip = "176.241.140.177";
+    // $ip = "176.241.140.177";
     $client = new Client();
     try {
       $url = "http://ip-api.com/json/{$ip}?fields=24593";
@@ -108,7 +119,48 @@ class CustomWeatherBlock extends BlockBase {
     catch (RequestException $e) {
       return FALSE;
     }
+  }
 
+  /**
+   * Connect database and fill the table with data.
+   */
+  public function setTableBase($location) {
+    // phpcs:ignore
+    $id = \Drupal::currentUser()->id();
+    /** @var \Drupal\mysql\Driver\Database\mysql\Connection $connection */
+    // phpcs:ignore
+    $connection = \Drupal::service('database');
+    $select = $connection->select('custom_weather_module', 'w')
+      ->fields('w');
+    $select->condition('uid', $id);
+    $result = $select->execute()->fetchAssoc();
+
+    if ($result) {
+      $connection->update('custom_weather_module')
+        ->fields([
+          'location' => $location,
+        ])->condition('uid', $id)->execute();
+    }
+    else {
+      $connection->insert('custom_weather_module')
+        ->fields([
+          'uid' => $id,
+          'location' => $location,
+        ])->execute();
+    }
+  }
+
+  /**
+   * Get an associative array with location data and their number.
+   */
+  public function getCountValue($location): array {
+    $this->setTableBase($location);
+    // phpcs:ignore
+    $connection = \Drupal::service('database');
+    $sql = $connection->select('custom_weather_module', 'v')
+      ->fields('v', ['location'])
+      ->execute()->fetchCol();
+    return array_count_values($sql);
   }
 
 }
