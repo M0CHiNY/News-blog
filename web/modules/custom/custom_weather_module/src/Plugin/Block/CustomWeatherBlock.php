@@ -3,6 +3,7 @@
 namespace Drupal\custom_weather_module\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+// Use Drupal\Core\Render\Element\Link;.
 use Drupal\custom_weather_module\Traits\ConnectApi;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
@@ -19,6 +20,7 @@ use GuzzleHttp\Exception\RequestException;
 class CustomWeatherBlock extends BlockBase {
 
   use ConnectApi;
+
   /*
    * The constant is the cache id.
    */
@@ -43,6 +45,7 @@ class CustomWeatherBlock extends BlockBase {
       '#temp_c' => $this->getData()['current']['temp_c'] ?? '',
       '#icon' => $this->getData()['current']['condition']['icon'] ?? '',
       '#location_count' => $count_loc ?? '',
+
     ];
   }
 
