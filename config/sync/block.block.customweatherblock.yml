@@ -1,4 +1,4 @@
-uuid: 3a804153-1b0e-49f5-9b04-a41d1b75a4ec
+uuid: 5d4fe7e7-4409-4f8a-8fa7-d63d260c535b
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: customweatherblock
 theme: new_blog
 region: header_1
-weight: -15
+weight: -14
 provider: null
 plugin: custom_weather_block
 settings:

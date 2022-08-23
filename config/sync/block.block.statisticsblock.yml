@@ -1,0 +1,20 @@
+uuid: 03a44724-dc84-488f-ab81-62f02bf23528
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_weather_module
+  theme:
+    - new_blog
+id: statisticsblock
+theme: new_blog
+region: block_one
+weight: -12
+provider: null
+plugin: StatisticsBlock
+settings:
+  id: StatisticsBlock
+  label: 'Statistics Block'
+  label_display: visible
+  provider: custom_weather_module
+visibility: {  }
