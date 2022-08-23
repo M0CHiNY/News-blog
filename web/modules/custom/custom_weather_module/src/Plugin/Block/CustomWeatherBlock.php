@@ -73,8 +73,7 @@ class CustomWeatherBlock extends BlockBase {
      */
     // phpcs:ignore
     \Drupal::cache()->set(self::ID, $dataAPI, time() + 3600);
-    // phpcs:ignore
-    return \Drupal::cache()->get(self::ID)->data;
+    return $dataAPI;
   }
 
   /**

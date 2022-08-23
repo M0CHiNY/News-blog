@@ -18,7 +18,7 @@ use Drupal\Core\Url;
 class StatisticsBlock extends BlockBase {
 
   /**
-   *
+   * {@inheritDoc}
    */
   public function build() {
 
