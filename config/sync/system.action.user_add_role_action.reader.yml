@@ -1,0 +1,14 @@
+uuid: 6bfa8e24-6615-42db-9eef-23c8bf9516dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.reader
+  module:
+    - user
+id: user_add_role_action.reader
+label: 'Add the reader role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: reader
