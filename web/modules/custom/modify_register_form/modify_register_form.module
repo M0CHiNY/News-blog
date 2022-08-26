@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Modify register form module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_user_format_name_alter().
+ */
+function modify_register_form_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  if ($form_id == 'user_register_form') {
+    /*
+     * Array $input_names get fields type name.
+     */
+    $input_names = ['mail', 'name'];
+    foreach ($input_names as $name) {
+      $form['account'][$name]['#description'] = NULL;
+    }
+    $form['account']['name']['#title'] = t('Login');
+
+    // Validate function.
+    $form['#validate'][] = '_modify_register_form_form_validate';
+  }
+}
+
+/**
+ * Function validate input.
+ */
+function _modify_register_form_form_validate(&$form, $form_state) {
+  if (($my_phone = $form_state->getValue('field_phone')[0]['value']) != '') {
+    if (!preg_match('/^\\+?\\d{1,4}?[-.\\s]?\\(?\\d{1,3}?\\)?[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{1,9}$/', $my_phone)) {
+      $form_state->setErrorByName('field_phone', 'Invalid phone number. Example - 380988078135. Please try again.');
+    }
+  }
+}
+
+/**
+ * Implements hook_user_presave().
+ *
+ * Add a role 'Reader' for each new user.
+ */
+function modify_register_form_user_presave(EntityInterface $entity) {
+  if ($entity->isNew()) {
+    $entity->addRole('reader');
+  }
+}
