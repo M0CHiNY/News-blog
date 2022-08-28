@@ -1,0 +1,9 @@
+uuid: 578adefd-8df4-44e9-898f-b8777487371b
+langcode: en
+status: true
+dependencies: {  }
+id: reader
+label: reader
+weight: 4
+is_admin: null
+permissions: {  }
